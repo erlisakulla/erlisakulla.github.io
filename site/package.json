@@ -1,20 +1,25 @@
 {
-  "name": "personal-website",
+  "homepage": "https://erlisakulla.github.io/site",
+  "name": "site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.15.1",
     "gh-pages": "^3.1.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://erlisakulla.github.io/personal-website",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
