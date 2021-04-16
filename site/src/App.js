@@ -1,14 +1,23 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './main/HomePage';
+import Home from './main/Home/HomePage';
+import Navbar from './components/Navbar/Navbar';
+import About from './main/About/AboutPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-		    <Route exact path="/" component={Home}/>
-	    </Switch>
-    </Router>
+    <>
+      <Navbar/>
+
+      <Router>
+        <Switch>
+          <Route exact path="/site" component={Home}/>
+          <Route exact path="/about" component={About}/>
+        </Switch>
+      </Router>
+    </>
   );
 }
 

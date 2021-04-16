@@ -1,0 +1,65 @@
+#home-img {  width: 40%;
+  float: left;
+  padding-top: 20px;
+}
+
+#section-1 {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+}
+
+.intro-text {
+  width: 60%;
+  height: 100%;
+  float: left;
+  padding-top: 20%;
+  padding-left: 100px;
+}
+
+#name {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#text {
+  font-size: 30px;
+}
+
+#section-2, #section-3, #section-4, #section-5, #section-6 {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background-color: rgb(237, 237, 237);
+  text-align: center;
+}
+
+.card-skills, .card-tools {
+  width: 50%;
+} 
+
+.ant-card-head-title {
+  font-size: 30px;
+}
+
+.skill {
+  font-size: 16px;
+}
+
+.skill-icons, .tool-icons {
+  justify-content: center;
+  text-align: center;
+}
+
+.adobe-icon {
+  margin-right: 15px;
+}
+
+.cando-card {
+  text-align: center;
+  justify-content: center;
+  min-height: 500px;
+}
