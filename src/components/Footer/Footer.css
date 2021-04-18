@@ -88,3 +88,33 @@ li a {
   text-align: center;
   width: 100%;
 }
+
+@media (max-width:960px) {
+  #footer-name {
+    font-size: 50px;
+  }
+
+  .social-media-icons {
+    margin: 0;
+  }
+
+  #footer-nav {
+    margin: 0;
+  }
+}
+
+@media (max-width:600px) {
+  .social-media-icons {
+    margin-bottom: 20px;
+  }
+
+  #footer-img{    
+    width: 500%;
+  }
+}
+
+@media (max-width:360px){
+  .cando-card {
+    transform: scale(0.8);
+  }
+}

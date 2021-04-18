@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=Orelega+One&display=swap');
 
 #home-img {  
-  max-width: 40%;
-  float: left;
   padding-top: 50px;
+  width: 120%;
 }
 
 #section-1, #skills, #about, #projects, #contact {
@@ -23,10 +22,9 @@
 }
 
 .intro-text {
-  width: 60%;
   height: 100%;
   float: left;
-  padding-top: 20%;
+  padding-top: 30%;
   padding-left: 100px;
 }
 
@@ -125,6 +123,7 @@
   padding-bottom: 100px;
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 0px;
 }
 
 .project-card, .cando-card {
@@ -177,7 +176,7 @@ h3 {
 }
 
 @keyframes cssAnimation {
-  to   { visibility: visible; }
+  to { visibility: visible; }
 }
 
 @keyframes fadeIn {
@@ -211,4 +210,110 @@ h3 {
 .MuiGrid-spacing-xs-5 > .MuiGrid-item {
   text-align: left;
   font-size: 13px;
+}
+
+@media (max-width:900px) {
+  #disappear {
+    display: none;
+  }
+
+  #about-text {
+    padding: 0px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:960px) {
+  #home-img {
+    padding: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+  }
+
+  #name {
+    font-size: 54px;
+  }
+
+  #text {
+    font-size: 18px;
+  }
+
+  .intro-text {
+    padding: 0px;
+  }
+
+  #section-1 {
+    height: 100vh;
+  }
+
+  #skills, #about, #projects, #contact {
+    padding-left: 10;
+    padding-right: 10;
+  }
+}
+
+.project-card:hover {
+  z-index: 80;
+  transform: translateY(-5px);
+  transition: transform linear 0.2s;
+}
+
+.project-card {
+  max-width: 100%;
+}
+/* 
+@media (max-width:1260px) {
+  #section-1 {
+    height: auto;
+  }
+} */
+
+@media (max-width:600px) {
+  p {
+    font-size: 14px !important;
+  }
+
+  h5 {
+    font-size: 18px !important;
+  }
+
+  #jacobs-logo, #emis-logo, #bmw-logo, #idmc-logo, #jsc-logo {
+    width: 30%;
+  }
+
+  .MuiTimeline-root {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width:361px) {
+  .skills-progress {
+    padding: 0 35px !important;
+  }
+
+  #about, #projects, #contact  {
+    padding: 0;
+    
+  }
+
+  #about-text {
+    padding: 20px !important;
+    font-size: 14px !important;
+  } 
+
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 0 !important;
+  }
+
+  #projects {
+    padding: 20px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+@media (max-width:390px) {
+  .skills-progress {
+    padding: 0 20px !important;
+  }
 }

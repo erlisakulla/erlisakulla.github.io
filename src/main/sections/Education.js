@@ -32,25 +32,25 @@ export default function CustomizedTimeline() {
         <TimelineOppositeContent>
           <Paper elevation={3} className={classes.paper} id="jacobs-paper">
             <Grid container spacing={3}>
-              <Grid item xs={9}>
+              <Grid item xs={12} sm={9}>
                 <h5>Jacobs University Bremen</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Bremen, Germany</i><br/>
                   BSc. Computer Science
                 </p>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={3}>
                 <img id="jacobs-logo" src={jacobs} alt="jacobs-logo"/>
               </Grid>
             </Grid>
           </Paper>
           <br/>
         </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined"/>
+        <TimelineSeparator id="disappear">
+          <TimelineDot variant="outlined" id="disappear"/>
           <TimelineConnector/>
         </TimelineSeparator>
-        <TimelineContent>
+        <TimelineContent id="disappear">
           2019 - 2022
         </TimelineContent>
       </TimelineItem>
@@ -59,10 +59,10 @@ export default function CustomizedTimeline() {
         <TimelineOppositeContent>
           <Paper elevation={3} className={classes.paper} id="emis-paper">
             <Grid container spacing={3}>
-              <Grid item xs={3}>
+              <Grid item  xs={12} sm={3}>
                 <img id="emis-logo" src={emis} alt="emis-logo"/>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item xs={12} sm={9}>
                 <h5>Eastern Mediterranean International School</h5>
                 <p>
                 <i style={{fontSize:'14px'}}>Tel Aviv, Israel</i><br/>
@@ -73,10 +73,10 @@ export default function CustomizedTimeline() {
           </Paper>
           <br/>
         </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary"/>
+        <TimelineSeparator id="disappear">
+          <TimelineDot color="primary" id="disappear"/>
         </TimelineSeparator>
-        <TimelineContent>
+        <TimelineContent id="disappear">
           2017 - 2019
         </TimelineContent>
       </TimelineItem>

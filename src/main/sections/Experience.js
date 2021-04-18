@@ -28,20 +28,20 @@ export default function CustomizedTimeline() {
   return (
     <Timeline align="alternate">
       <TimelineItem>
-        <TimelineOppositeContent>
+        <TimelineOppositeContent id="disappear">
           June - July 2021
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot/>
+        </TimelineOppositeContent >
+        <TimelineSeparator id="disappear">
+          <TimelineDot id="disappear"/>
           <TimelineConnector/>
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper} id="bmw-paper">
             <Grid container spacing={3}>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={3}>
                 <img id="bmw-logo" src={bmw} alt="bmw-logo"/>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item xs={12} sm={9}>
                 <h5>Software Engineering Intern</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Munich, Germany</i><br/>
@@ -55,17 +55,17 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent>
+        <TimelineOppositeContent id="disappear">
           April 2020 - March 2021
         </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined"/>
+        <TimelineSeparator id="disappear">
+          <TimelineDot color="primary" variant="outlined" id="disappear"/>
           <TimelineConnector className={classes.secondaryTail}/>
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper} id="bmw-paper">
             <Grid container spacing={3}>
-              <Grid item xs={9}>
+              <Grid item xs={12} sm={9}>
                 <h5>Head of Marketing and Design</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Bremen, Germany</i><br/>
@@ -73,7 +73,7 @@ export default function CustomizedTimeline() {
                 </p>
 
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={3}>
                 <img id="jsc-logo" src={jsc} alt="jsc-logo"/>
               </Grid>
             </Grid>
@@ -83,19 +83,19 @@ export default function CustomizedTimeline() {
       </TimelineItem>
 
       <TimelineItem>
-        <TimelineOppositeContent>
+        <TimelineOppositeContent id="disappear">
           January - August 2017
         </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="secondary"/>
+        <TimelineSeparator id="disappear">
+          <TimelineDot color="secondary" id="disappear"/>
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper} id="bmw-paper">
             <Grid container spacing={3}>
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={3}>
                 <img id="idmc-logo" src={idmc} alt="idmc-logo"/>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item xs={12} sm={9}>
                 <h5>Content Creator</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Tirana, Albania</i><br/>

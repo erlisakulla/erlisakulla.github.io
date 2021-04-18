@@ -7,7 +7,7 @@ import { FiGithub, FiGlobe } from 'react-icons/fi';
 export const Projects = () => {
   return (
     <Grid container spacing={3}>
-      <Grid item xs={6} className="projects-grid" style={{justifyContent:'center'}}>
+      <Grid item xs={12} md={6} className="projects-grid" style={{justifyContent:'center'}}>
         <Card
           className="project-card"
           hoverable
@@ -30,7 +30,7 @@ export const Projects = () => {
         </Card>
       </Grid>
 
-      <Grid item xs={6} className="projects-grid">
+      <Grid item xs={12} md={6} className="projects-grid">
         <Card
           className="project-card"
           hoverable

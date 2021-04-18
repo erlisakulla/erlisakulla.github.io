@@ -1,9 +1,12 @@
 # Personal Website
 
+## Framework: React
+
 ## TODO
 - [ ] Add more colors from the color theme
 - [ ] Colorful navs on hover
-- [ ] Make the website content and navbar responsive
+- [X] Make the website content responsive
+- [ ] Make navbar responsive
 - [ ] Illustrations for sections
 - [ ] Background designs
 - [ ] Activate navbar links when scrolled at them

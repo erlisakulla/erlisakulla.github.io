@@ -7,6 +7,10 @@
   font-weight: 300;
 }
 
+/* #nav {
+  transform: translateY(30px);
+} */
+
 .nav-link:after {
   display:block;
   content: '';
@@ -34,4 +38,10 @@
   margin: auto;
   z-index: 100;
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(255,255,255,0) 100%);
+}
+
+@media (max-width: 900px) {
+  #nav {
+    display: none;
+  }
 }

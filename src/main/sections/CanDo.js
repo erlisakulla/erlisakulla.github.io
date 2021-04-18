@@ -28,7 +28,7 @@ export const CanDoList = () => {
 
   return (
     <Grid container spacing={8}>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card className="cando-card">
           <h5>UI/UX Design</h5>
           <hr/>
@@ -107,7 +107,7 @@ export const CanDoList = () => {
       </Grid>
       
 
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card elevation={3} className="cando-card">
           <h5>Frontend Development</h5>
           <hr/>
@@ -184,7 +184,7 @@ export const CanDoList = () => {
         </Card>
       </Grid>
 
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card elevation={3} className="cando-card">
           <h5>Backend Development</h5>
           <hr/>

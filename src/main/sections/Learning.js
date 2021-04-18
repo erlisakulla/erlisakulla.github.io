@@ -7,7 +7,7 @@ import { SiBlender, SiFlutter, SiFirebase, SiHoudini, SiCsharp, SiUnity, SiUnrea
 export const LearningList = () => {
   return (
     <Grid container spacing={8}>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card className="cando-card">
           <h5>Mobile App Development</h5>
           <hr/>
@@ -22,7 +22,7 @@ export const LearningList = () => {
       </Grid>
       
 
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card elevation={3} className="cando-card">
           <h5>Game Development</h5>
           <hr/>
@@ -36,7 +36,7 @@ export const LearningList = () => {
         </Card>
       </Grid>
 
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Card elevation={3} className="cando-card">
           <h5>3D Modelling and VFX</h5>
           <hr/>
