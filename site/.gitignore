@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# files
+src/main/sections/Skills.js
+src/main/sections/Tools.js

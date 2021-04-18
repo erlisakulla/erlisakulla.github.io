@@ -2,9 +2,16 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './main/Home/HomePage';
 import Navbar from './components/Navbar/Navbar';
-import About from './main/About/AboutPage';
+import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
+
+/*
+
+TODO
+Fix router problem for deployment
+
+*/
 
 function App() {
   return (
@@ -13,10 +20,11 @@ function App() {
 
       <Router>
         <Switch>
-          <Route exact path="/site" component={Home}/>
-          <Route exact path="/about" component={About}/>
+          <Route exact path="/" component={Home}/>
         </Switch>
       </Router>
+
+      <Footer/>
     </>
   );
 }

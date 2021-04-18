@@ -1,81 +1,70 @@
 # Personal Website
 
 ## TODO
-- [ ] Create logo and illustrations
-- [ ] Build main pages and components
-- [ ] Add cool visuals and illustrations
-- [ ] Add custom styles, transitions, animations and scrolls
-- [ ] Make it responsive
-- [ ] Build 
-- [ ] Deploy to Github Pages or Netlify
-- [ ] Get domain and connect it to the domain
+- [ ] Add more colors from the color theme
+- [ ] Colorful navs on hover
+- [ ] Make the website content and navbar responsive
+- [ ] Illustrations for sections
+- [ ] Background designs
+- [ ] Activate navbar links when scrolled at them
+- [ ] Make skills and can do as slideshow cards
+- [ ] Make work and education cards collapsible to show more details
+- [ ] Add transition when content is loading
+- [ ] Add animations and transitions using react-scroll, GSAP or ScrollMagic
+- [ ] Get domain and connect it
+- [ ] Add background hover animations
+- [ ] Illustration hover animations
+- [ ] Create logo animation when page is loaded 
 
 ## Styles
-* Font: 
+* Fonts: Poppins, IBM Plex Serif
 * Color theme: red, yellow, white, blue
 * Add minisection navigation in each page
 * Scroll to top option
-* Animated logo
 * Inspo from Bridge website https://bridgelanding.qodeinteractive.com
 * Sticky navbar on scroll
+* Using components from Material UI (Grid, Timeline, Paper, Ant Design (Card, Col, Row, Button) Design, React Bootstrap (Navbar), Feather Icons, react-icons
 
 ## Website Structure
 
-### Home Page 
-- [ ] Introduction
-    * [ ] Short intro paragraph
-    * [ ] Skills:
-        * HTML
-        * CSS
-        * Javascript 
-        * Bootstrap 
-        * React.js
+### Navbar 
+- [X] Link to download resume
 
-        * Node.js
-        * Django
-        * C/C++
-        * Java
-        * Python
-    * [ ] Tools:
-        * Unity
-        * Figma
-        * Adobe XD
-        * Adobe Photoshop
-        * Adobe Illustrator
-        * Adobe Premiere Pro
-        * Blender
-    * [ ] What can I do
-    * [ ] What I am learning
-    * [ ] Projects intro
-    * [ ] Contact me redirect
+### Intro 
+* [X] Image
+* [X] Short intro sentence
+* [X] Button to Skills section
+
+### Skills
+* [X] What can I do
+* [X] What I am learning
  
-### Work/Projects Page
-- [ ] List / grid view of 
+### Projects
+- [X] Grid view of Github repositories
 - [ ] Git contributions calendar
 - [ ] Link to art portfolio website
 
 ### About Page
-- [ ] Short bio
-- [ ] Education
-- [ ] Experience 
+- [X] Short bio
+- [X] Experience 
+- [X] Education
 - [ ] Voluntary expereince and event organization
 - [ ] Awards and Scholarships
-- [ ] Download resume (maybe put it in navbar)
 - [ ] Interests and Hobbies
     - Playing bass
-    - Listening to music (share top/fav artists) - Spotify
+    - Listening to music (share top/fav artists)
     - Watching animated movies and series (share fav stuff to watch)
     - Painting
     - Exploring street art
 
-### Contact Page
-- [ ] Contact me form
-- [ ] Social media links
+### Contact 
+- [ ] Contact me form that sends emails
+
 
 ### Blog
-- [ ] Create blog management with django rest framework
+- [ ] Create blog page
 
 ### Footer
-- [ ] Navigation links
-- [ ] Social media links: facebook, instagram, artstaion, github, artstation, behance
-- [ ] Made with React
+- [X] Navigation links
+- [X] Social media links: facebook, instagram, artstaion, github, artstation, behance
+- [X] Made with React and Copyright

@@ -3,3 +3,18 @@
 html, body {
   font-family: 'Poppins', sans-serif !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 16px;
+}
+
+html, body {
+  /* background: rgb(253, 253, 253); */
+  background: white;
+  background-image: radial-gradient(rgb(200, 200, 200) 1px, transparent 0);
+  background-size: 30px 30px;
+}
