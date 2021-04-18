@@ -12,29 +12,6 @@ import Education from '../sections/Education';
 import Experience from '../sections/Experience';
 import { FiMoreHorizontal } from 'react-icons/fi';
 
-/*
-
-TODO
-
-create illustrations for can do and learning
-add skils and tools to cando/learning
-add picture with white coloring
-activate navbar links when scrolled at them
-custom Erlisa Kulla handwritten 
-edit can do and learning sections
-
-make skills and can do as slideshow cards
-make stuff appear on scroll
-do sth cool when hover on sofware engineer and artist
-add random objects that when you hover you can see info: mp3 player, notebook/sketchbook, 
-use react-scroll
-cool background designs
-https://reactjs.org/docs/animation.html#low-level-api-reacttransitiongroup
-cool background illustrations for each section that move on scroll
-add transition when content is loading
-
-*/
-
 class Home extends React.Component {
   constructor(props) {
     super(props);

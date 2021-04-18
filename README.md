@@ -1,5 +1,7 @@
 # Personal Website
 
+## [www.erlisakulla.com](www.erlisakulla.com)
+
 ## Framework: React
 
 ## TODO
@@ -14,10 +16,11 @@
 - [ ] Make work and education cards collapsible to show more details
 - [ ] Add transition when content is loading
 - [ ] Add animations and transitions using react-scroll, GSAP or ScrollMagic
-- [ ] Get domain and connect it
+- [X] Get domain and connect it
 - [ ] Add background hover animations
 - [ ] Illustration hover animations
 - [ ] Create logo animation when page is loaded 
+- [ ] Add sticky social media icons to the side
 
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
