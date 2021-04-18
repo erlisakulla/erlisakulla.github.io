@@ -18,7 +18,7 @@
 }
 
 #skills, #about, #projects, #contact, #learning {
-  padding-top: 70px;
+  padding-top: 70px !important;
 }
 
 .intro-text {
@@ -120,7 +120,7 @@
 }
 
 #projects {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 0px;
@@ -128,18 +128,6 @@
 
 .project-card, .cando-card {
   box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
-}
-
-#complex-form {
-  text-align: center;
-  width: 50%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-#complex-form input {
-  width: 100%;
 }
 
 #about-text {
@@ -262,12 +250,6 @@ h3 {
 .project-card {
   max-width: 100%;
 }
-/* 
-@media (max-width:1260px) {
-  #section-1 {
-    height: auto;
-  }
-} */
 
 @media (max-width:600px) {
   p {
@@ -315,5 +297,96 @@ h3 {
 @media (max-width:390px) {
   .skills-progress {
     padding: 0 20px !important;
+  }
+}
+
+#ui-ux-expand-arrow:hover, #frontend-expand-arrow:hover, #backend-expand-arrow:hover {
+  opacity: 1;
+  animation: expandArrow 1s infinite;
+}
+
+@keyframes expandArrow {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(5px);}
+  100% {transform: translateY(0px);}
+}
+
+#ui-ux-expand-arrow {
+  opacity: 0.8;
+  color: #3f51b5;
+  transition: linear 0.5s;
+}
+
+#frontend-expand-arrow {
+  opacity: 0.8;
+  color: #f50057;
+  transition: linear 0.5s;
+}
+
+#backend-expand-arrow {
+  opacity: 0.8;
+  transition: linear 0.5s;
+}
+
+.cando-card:hover [id="ui-ux-icons"] {
+  color: #3f51b5;
+  transition: linear 0.5s;
+}
+
+#ui-ux-icons {
+  transition: linear 0.3s;
+}
+
+.cando-card:hover [id="frontend-icons"] {
+  color: #f50057;
+  transition: linear 0.5s;
+}
+
+#frontend-icons {
+  transition: linear 0.3s;
+}
+
+#ui-ux-skills svg {
+  color: #3f51b5;
+  margin-left: 7px;
+}
+
+#frontend-skills svg {
+  color: #f50057;
+}
+
+#fname, #lname, #subject, #email, #message {
+  border-color: #f50057;
+}
+
+/* #fname::placeholder, #lname::placeholder, #subject::placeholder, #email::placeholder, #message::placeholder {
+  color: #f50057;
+  opacity: 0.7;
+  font-weight: 400;
+} */
+
+#contact-form-cont {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 70px;
+}
+
+#message {
+  height: 144px;
+}
+
+#submit-btn {
+  border-color: #3f51b5;
+  color: #3f51b5;
+}
+
+#submit-btn:hover {
+  color: white;
+  background-color: #3f51b5;
+}
+
+@media (max-width:600px) {
+  #contact-form-cont {
+    padding: 30px !important;
   }
 }

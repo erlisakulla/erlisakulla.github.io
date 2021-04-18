@@ -13,19 +13,19 @@ class Navbar extends React.Component {
 
           <Grid container spacing={5}>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={4}>
               <Grid container spacing={5}>
-                <Grid item xs={4} md={6}>
+                <Grid item md={6}>
                   <img id="footer-img" src={logo} alt="footer-img"/>
                 </Grid>
 
-                <Grid item xs={8} md={6}>
+                <Grid item xs={12} md={6}>
                   <h3 id="footer-name">Erlisa Kulla</h3>
                 </Grid>
               </Grid>
             </Grid>
 
-            <Grid item  xs={6} md={6} lg={4}>
+            <Grid item  xs={12} md={4}>
               <div  id="footer-nav-cont">
                 <ul id="footer-nav">
                   <li><a href="#skills">Skills</a></li>
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
               
             </Grid>
             
-            <Grid item  xs={6} md={12} lg={4}>
+            <Grid item xs={12} md={4}>
               <div className="social-media-icons">
                 <a href="https://github.com/erlisakulla" target="_blank" rel="noreferrer"><FiGithub size={40}/></a>
                 <a href="https://www.linkedin.com/in/erlisa-kulla/" target="_blank" rel="noreferrer"><FiLinkedin size={40}/></a> 

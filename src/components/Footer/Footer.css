@@ -105,16 +105,26 @@ li a {
 
 @media (max-width:600px) {
   .social-media-icons {
-    margin-bottom: 20px;
+    padding-bottom: 20px !important;
   }
 
-  #footer-img{    
-    width: 500%;
+  .social-media-icons a {
+    margin: 7px;
+  }
+
+  #footer-name {
+    margin: 0;
+  }
+
+  #footer-quote {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
   }
 }
 
-@media (max-width:360px){
-  .cando-card {
-    transform: scale(0.8);
+@media (max-width:960px) {
+  #footer-img{    
+    display: none !important;
   }
 }

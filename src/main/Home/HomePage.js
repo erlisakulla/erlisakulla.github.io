@@ -6,7 +6,7 @@ import { BackTop, Button } from 'antd';
 import { CanDoList } from '../sections/CanDo';
 import { LearningList } from '../sections/Learning';
 import { Projects } from '../sections/Projects';
-// import ContactMe from '../sections/ContactMe';
+import ContactMe from '../sections/ContactMe';
 import { FiChevronUp, FiChevronsRight } from 'react-icons/fi';
 import Education from '../sections/Education';
 import Experience from '../sections/Experience';
@@ -87,26 +87,6 @@ class Home extends React.Component {
                 </div>
               </Grid>
             </Grid>
-
-            {/* <img id="home-img" src={self} alt="intro-img"/> */}
-
-            {/* <div className="intro-text">
-              <h2 id="name">Erlisa Kulla</h2>
-              <p id="text">
-                <a href="https://github.com/erlisakulla" target="_blank" rel="noreferrer"><b style={{color:'#3f51b5'}} id="software">Software Developer</b></a> and <a href="https://erlisakulla.artstation.com" target="_blank" rel="noreferrer"><b style={{color:'#f50057'}} id="artist">Artist</b></a> with a great passion for learning and creative exploration.
-              </p>
-              <a href="#skills">
-                <Button 
-                  type="secondary" 
-                  shape="round" 
-                  size="large"
-                  className="link-btn"
-                  icon={<FiChevronsRight size={20} style={{marginRight:'10px'}} id="icon-arrow"/>}
-                >
-                  Get to know me
-                </Button>
-              </a>
-            </div> */}
           </div>
 
           <div id="skills">
@@ -126,7 +106,7 @@ class Home extends React.Component {
           <div id="about">
             <h1>About Me</h1>
             <p style={{fontSize:'16px'}} id="about-text">
-              I am from Albania, currently located in 📍 Bremen, Germany. <br/>
+              I am from Albania, currently located in 📍 Bremen, Germany. 
               My biggest passions are programming and art and I am always looking for ways to combine the two.
               I love 🎨 painting, 🎶 listening to music, 🎸 playing bass, 🎥 watching animated movies and shows, and of course 💻 programming.
             </p>
@@ -159,10 +139,11 @@ class Home extends React.Component {
             </a>
           </div>
 
-          {/* <div id="contact">
-            <h1>Let's get in touch!</h1>
+          <div id="contact">
+            <h1 style={{fontWeight:700}}>Let's get in touch!</h1>
+            <h5 style={{paddingBottom:30, opacity:0.8}}>#OpenToWork</h5>
             <ContactMe/>
-          </div> */}
+          </div>
         </div>
 
         <BackTop>

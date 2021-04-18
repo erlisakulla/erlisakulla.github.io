@@ -28,11 +28,11 @@ function Navbar(props) {
             </Nav.Link>
           </Nav.Item>
 
-          {/* <Nav.Item>
+          <Nav.Item>
             <Nav.Link href="#contact" id="contact-link">
               Contact
             </Nav.Link>
-          </Nav.Item> */}
+          </Nav.Item>
 
           <Nav.Item>
             <Nav.Link 

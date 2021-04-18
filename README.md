@@ -61,8 +61,7 @@
     - Exploring street art
 
 ### Contact 
-- [ ] Contact me form that sends emails
-
+- [X] Contact me form that sends emails using EmailJS
 
 ### Blog
 - [ ] Create blog page

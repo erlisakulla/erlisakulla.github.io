@@ -6,8 +6,9 @@ import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3, DiPython, DiJavascript, DiJava, DiReact, DiNodejsSmall, DiMysql } from 'react-icons/di';
 import { BsFillBootstrapFill } from 'react-icons/bs';
 import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremiere, SiAdobexd } from 'react-icons/si';
-import { FiFigma } from 'react-icons/fi';
+import { FiFigma, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { SiDjango, SiCplusplus } from 'react-icons/si';
+// import uiux from '../../img/ui-ux-icon.svg';
 
 export const CanDoList = () => {
   const [uiUxExpand, setUiUxExpand] = useState(false);
@@ -30,6 +31,8 @@ export const CanDoList = () => {
     <Grid container spacing={8}>
       <Grid item xs={12} md={4}>
         <Card className="cando-card">
+          {/* <img src={uiux} alt="img" style={{width:200, height:200}}/> */}
+
           <h5>UI/UX Design</h5>
           <hr/>
           Design and prototype websites and apps using tools like <b>Figma</b> and <b>Adobe XD</b>. 
@@ -38,7 +41,7 @@ export const CanDoList = () => {
           <div style={{paddingTop:'20px'}} className="icons" onClick={handleExpandClick1}>
             {
               (uiUxExpand === false) ?
-              <div className="just-icons">
+              <div className="just-icons" id="ui-ux-icons">
                 <FiFigma size={25}/>
                 <SiAdobephotoshop size={25}/>
                 <SiAdobeillustrator size={25}/>
@@ -48,7 +51,7 @@ export const CanDoList = () => {
               null
             }
             <div className="skills-progress">
-              <Collapse in={uiUxExpand} timeout="auto" unmountOnExit>
+              <Collapse in={uiUxExpand} timeout="auto" unmountOnExit  id="ui-ux-skills">
                 <Grid container spacing={5}>
                   <Grid item xs={2}>
                     <FiFigma size={25}/>
@@ -102,6 +105,11 @@ export const CanDoList = () => {
                 </Grid>
               </Collapse>
             </div>
+            {
+              (uiUxExpand === false) ?
+              <FiChevronDown size={25} id="ui-ux-expand-arrow"/> :
+              <FiChevronUp size={25} id="ui-ux-expand-arrow"/>
+            }
           </div>
         </Card>
       </Grid>
@@ -116,7 +124,7 @@ export const CanDoList = () => {
           <div style={{paddingTop:'20px'}} className="icons"  onClick={handleExpandClick2}>
             {
               (frontendExpand === false) ?
-              <div className="just-icons">
+              <div className="just-icons" id="frontend-icons">
                 <AiFillHtml5 size={25}/>
                 <DiCss3 size={25}/>
                 <DiJavascript size={25}/>
@@ -126,7 +134,7 @@ export const CanDoList = () => {
               null
             }
             <div className="skills-progress">
-              <Collapse in={frontendExpand} timeout="auto" unmountOnExit>
+              <Collapse in={frontendExpand} timeout="auto" unmountOnExit id="frontend-skills">
                 <Grid container spacing={5}>
                   <Grid item xs={2}>
                     <AiFillHtml5 size={25}/>
@@ -180,6 +188,11 @@ export const CanDoList = () => {
                 </Grid>
               </Collapse>
             </div>
+            {
+              (frontendExpand === false) ?
+              <FiChevronDown size={25} id="frontend-expand-arrow"/> :
+              <FiChevronUp size={25} id="frontend-expand-arrow"/>
+            }
           </div>
         </Card>
       </Grid>
@@ -193,7 +206,7 @@ export const CanDoList = () => {
           <div style={{paddingTop:'20px'}} className="icons" onClick={handleExpandClick3}>
             {
               (backendExpand === false) ?
-              <div className="just-icons">
+              <div className="just-icons" id="backend-icons">
                 <SiCplusplus size={25}/>
                 <DiMysql size={25}/>
                 <DiJava size={25}/>
@@ -205,7 +218,7 @@ export const CanDoList = () => {
               null
             }
             <div className="skills-progress">
-              <Collapse in={backendExpand} timeout="auto" unmountOnExit>
+              <Collapse in={backendExpand} timeout="auto" unmountOnExit id="backend-skills">
                 <Grid container spacing={5}>
                   <Grid item xs={2}>
                     <SiCplusplus size={25}/>
@@ -281,6 +294,11 @@ export const CanDoList = () => {
                 </Grid>
               </Collapse>
             </div>
+            {
+              (backendExpand === false) ?
+              <FiChevronDown size={25} id="backend-expand-arrow"/> :
+              <FiChevronUp size={25} id="backend-expand-arrow"/>
+            }
           </div>
         </Card>
       </Grid>
