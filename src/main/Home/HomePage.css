@@ -348,7 +348,7 @@ h3 {
 
 #ui-ux-skills svg {
   color: #3f51b5;
-  margin-left: 7px;
+  transform: scale(0.8);
 }
 
 #frontend-skills svg {

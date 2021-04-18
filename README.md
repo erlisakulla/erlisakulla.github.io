@@ -5,6 +5,8 @@
 ## Framework: React
 
 ## TODO
+- [ ] Update CV
+- [ ] Fix responsive issues: ui ux skills icons, projects and about padding
 - [ ] Add more colors from the color theme
 - [ ] Colorful navs on hover
 - [X] Make the website content responsive
