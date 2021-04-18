@@ -18,7 +18,7 @@
 
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
-* Color theme: red, yellow, white, blue
+* Color theme: pink, blue, dark grey
 * Add minisection navigation in each page
 * Scroll to top option
 * Inspo from Bridge website https://bridgelanding.qodeinteractive.com
