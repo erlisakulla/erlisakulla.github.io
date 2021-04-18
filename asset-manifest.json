@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3396daa.chunk.css",
-    "main.js": "/static/js/main.9e46f559.chunk.js",
-    "main.js.map": "/static/js/main.9e46f559.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6fca83ec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6fca83ec.js.map",
+    "main.css": "/static/css/main.a9ffb53f.chunk.css",
+    "main.js": "/static/js/main.aafc1bfa.chunk.js",
+    "main.js.map": "/static/js/main.aafc1bfa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a2869f17.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a2869f17.js.map",
     "static/css/2.c0add0fe.chunk.css": "/static/css/2.c0add0fe.chunk.css",
-    "static/js/2.80e6a82a.chunk.js": "/static/js/2.80e6a82a.chunk.js",
-    "static/js/2.80e6a82a.chunk.js.map": "/static/js/2.80e6a82a.chunk.js.map",
-    "static/js/3.604ae6a0.chunk.js": "/static/js/3.604ae6a0.chunk.js",
-    "static/js/3.604ae6a0.chunk.js.map": "/static/js/3.604ae6a0.chunk.js.map",
+    "static/js/2.603dba4b.chunk.js": "/static/js/2.603dba4b.chunk.js",
+    "static/js/2.603dba4b.chunk.js.map": "/static/js/2.603dba4b.chunk.js.map",
+    "static/js/3.c82218f0.chunk.js": "/static/js/3.c82218f0.chunk.js",
+    "static/js/3.c82218f0.chunk.js.map": "/static/js/3.c82218f0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c0add0fe.chunk.css.map": "/static/css/2.c0add0fe.chunk.css.map",
-    "static/css/main.c3396daa.chunk.css.map": "/static/css/main.c3396daa.chunk.css.map",
-    "static/js/2.80e6a82a.chunk.js.LICENSE.txt": "/static/js/2.80e6a82a.chunk.js.LICENSE.txt",
+    "static/css/main.a9ffb53f.chunk.css.map": "/static/css/main.a9ffb53f.chunk.css.map",
+    "static/js/2.603dba4b.chunk.js.LICENSE.txt": "/static/js/2.603dba4b.chunk.js.LICENSE.txt",
     "static/media/ErlisaKullaCV.37fbd5f2.pdf": "/static/media/ErlisaKullaCV.37fbd5f2.pdf",
     "static/media/bmw-logo.0e7959ee.png": "/static/media/bmw-logo.0e7959ee.png",
     "static/media/emis-logo.dac5cee3.png": "/static/media/emis-logo.dac5cee3.png",
@@ -24,10 +24,10 @@
     "static/media/self.ddae1947.png": "/static/media/self.ddae1947.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6fca83ec.js",
+    "static/js/runtime-main.a2869f17.js",
     "static/css/2.c0add0fe.chunk.css",
-    "static/js/2.80e6a82a.chunk.js",
-    "static/css/main.c3396daa.chunk.css",
-    "static/js/main.9e46f559.chunk.js"
+    "static/js/2.603dba4b.chunk.js",
+    "static/css/main.a9ffb53f.chunk.css",
+    "static/js/main.aafc1bfa.chunk.js"
   ]
 }
