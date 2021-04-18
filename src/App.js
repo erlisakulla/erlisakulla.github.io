@@ -6,13 +6,6 @@ import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
 
-/*
-
-TODO
-Fix router problem for deployment
-
-*/
-
 function App() {
   return (
     <>

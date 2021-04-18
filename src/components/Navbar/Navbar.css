@@ -7,10 +7,6 @@
   font-weight: 300;
 }
 
-/* #nav {
-  transform: translateY(30px);
-} */
-
 .nav-link:after {
   display:block;
   content: '';
@@ -44,4 +40,93 @@
   #nav {
     display: none;
   }
+
+  #collapsed-navbar {
+    display: block !important;
+  }
+}
+
+#collapsed-navbar {
+  display: none;
+}
+
+.wrapper{
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+
+.menu-btn{
+  position: fixed;
+  z-index: 200;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .menu-btn{
+  background: #fff;
+}
+
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.wrapper ul li{
+  margin: 15px 0;
+}
+
+.wrapper ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul li a:hover{
+  color: #4158d0;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+#collapsed-navbar .nav-link {
+  margin: 0;
+  padding: 0 !important;
+  height: auto;
+}
+
+.wrapper ul {
+  padding: 0;
 }

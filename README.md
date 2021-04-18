@@ -6,11 +6,11 @@
 
 ## TODO
 - [ ] Update CV
-- [ ] Fix responsive issues: ui ux skills icons, projects and about padding
+- [ ] Fix responsive issues: projects and about padding
 - [ ] Add more colors from the color theme
 - [ ] Colorful navs on hover
 - [X] Make the website content responsive
-- [ ] Make navbar responsive
+- [X] Make navbar responsive
 - [ ] Illustrations for sections
 - [ ] Background designs
 - [ ] Activate navbar links when scrolled at them
@@ -23,6 +23,8 @@
 - [ ] Illustration hover animations
 - [ ] Create logo animation when page is loaded 
 - [ ] Add sticky social media icons to the side
+- [ ] Add close icon to responsive navbar
+- [ ] Add dark mode option
 
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
