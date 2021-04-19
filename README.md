@@ -6,7 +6,6 @@
 
 ## TODO
 - [ ] Update CV
-- [ ] Fix responsive issues: projects and about padding
 - [ ] Colorful navs on hover
 - [X] Make the website content responsive
 - [X] Make navbar responsive
@@ -22,7 +21,7 @@
 - [ ] Illustration hover animations
 - [ ] Create logo animation when page is loaded 
 - [ ] Add sticky social media icons to the side
-- [ ] Add close icon to responsive navbar
+- [X] Add close icon to responsive navbar
 - [ ] Add dark mode option
 - [ ] Fix work and education images on responsive site
 - [ ] Add images to Projects - add icons of frameworks

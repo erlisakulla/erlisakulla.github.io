@@ -15,7 +15,7 @@
   transition: transform 250ms ease-in-out;
 }
 
-.nav-link:not(#resume-btn):hover:after { 
+.nav-link:not(#resume-btn, .wrapper .nav-link):hover:after { 
   transform: scaleX(1); 
 }
 
@@ -50,7 +50,7 @@
   display: none;
 }
 
-.wrapper{
+.wrapper {
   position: fixed;
   z-index: 150;
   top: 0;
@@ -62,11 +62,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-#active:checked ~ .wrapper{
+#active:checked ~ .wrapper {
   clip-path: circle(75%);
 }
 
-.menu-btn{
+.menu-btn {
   position: fixed;
   z-index: 200;
   right: 20px;
@@ -83,15 +83,38 @@
   transition: all 0.3s ease-in-out;
 }
 
-#active:checked ~ .menu-btn{
+#active:checked ~ .menu-btn {
   background: #fff;
 }
 
-#active:checked ~ .menu-btn i:before{
-  content: "\f00d";
+#close-nav {
+  display: none;
 }
 
-.wrapper ul{
+#active:checked ~ .menu-btn #open-nav {
+  display: none;
+}
+
+#active:checked ~ .menu-btn #close-nav {
+  display: inline-block ;
+  animation: rotateIcon 0.7s
+}
+
+#open-nav {
+  animation: rotateIcon2 0.7s;
+}
+
+@keyframes rotateIcon {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes rotateIcon2 {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-360deg);}
+}
+
+.wrapper ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,11 +123,11 @@
   text-align: center;
 }
 
-.wrapper ul li{
+.wrapper ul li {
   margin: 15px 0;
 }
 
-.wrapper ul li a{
+.wrapper ul li a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
@@ -113,11 +136,11 @@
   transition: all 0.3s ease;
 }
 
-.wrapper ul li a:hover{
-  color: #4158d0;
+.wrapper ul li a:hover {
+  color: #3f51b5;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   display: none;
 }
 

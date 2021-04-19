@@ -203,6 +203,10 @@ h3 {
     padding: 0px;
     font-size: 14px;
   }
+
+  .time {
+    display: block !important;
+  }
 }
 
 @media (max-width:960px) {
@@ -233,6 +237,10 @@ h3 {
     padding-left: 10;
     padding-right: 10;
   }
+  
+  #section-1 {
+    height: 100% !important;
+  }
 }
 
 .project-card:hover {
@@ -246,7 +254,7 @@ h3 {
 }
 
 @media (max-width:600px) {
-  p {
+  p:not(#text) {
     font-size: 14px !important;
   }
 
@@ -254,12 +262,20 @@ h3 {
     font-size: 18px !important;
   }
 
-  #jacobs-logo, #emis-logo, #bmw-logo, #idmc-logo, #jsc-logo {
-    width: 30%;
-  }
-
   .MuiTimeline-root {
     padding: 0 !important;
+  }
+
+  #projects {
+    padding:10% !important;
+  }
+
+  #home-img {
+    padding-top: 50px;
+  }
+
+  #skills {
+    padding-top: 150px !important;
   }
 }
 
@@ -270,7 +286,6 @@ h3 {
 
   #about, #projects, #contact  {
     padding: 0;
-    
   }
 
   #about-text {
@@ -342,7 +357,7 @@ h3 {
 
 #ui-ux-skills svg {
   color: #3f51b5;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
 }
 
 #frontend-skills svg {
@@ -381,6 +396,38 @@ h3 {
 
 @media (max-width:600px) {
   #contact-form-cont {
-    padding: 30px !important;
+    padding: 0 !important;
   }
+
+  #timeline-content {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  #about {
+    margin: 0;
+    padding: 1%;
+  }
+
+  #about-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.time {
+  text-align: center;
+  font-size: 13px;
+  display: none;
+  background-color: #3f51b5;
+  opacity: 0.7;
+  color: white;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  transform: translateY(15px);
+  border-radius: 4px;
 }

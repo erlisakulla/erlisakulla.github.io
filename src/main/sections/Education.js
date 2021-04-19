@@ -27,19 +27,20 @@ export default function CustomizedTimeline() {
   const classes = useStyles();
 
   return (
-    <Timeline align="alternate">
+    <Timeline align="alternate" id="education-timeline">
+      <div className="time">2019 - 2022</div>
       <TimelineItem>
-        <TimelineOppositeContent>
+        <TimelineOppositeContent id="timeline-content">
           <Paper elevation={3} className={classes.paper} id="jacobs-paper">
             <Grid container spacing={3}>
-              <Grid item xs={12} sm={9}>
+              <Grid item xs={9}>
                 <h5>Jacobs University Bremen</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Bremen, Germany</i><br/>
                   BSc. Computer Science
                 </p>
               </Grid>
-              <Grid item xs={12} sm={3}>
+              <Grid item xs={3}>
                 <img id="jacobs-logo" src={jacobs} alt="jacobs-logo"/>
               </Grid>
             </Grid>
@@ -54,15 +55,22 @@ export default function CustomizedTimeline() {
           2019 - 2022
         </TimelineContent>
       </TimelineItem>
-      
+
+      <div className="time">2017 - 2019</div>
       <TimelineItem>
-        <TimelineOppositeContent>
+        <TimelineOppositeContent id="disappear">
+        2017 - 2019
+        </TimelineOppositeContent>
+        <TimelineSeparator id="disappear">
+          <TimelineDot color="primary" id="disappear"/>
+        </TimelineSeparator>
+        <TimelineContent>
           <Paper elevation={3} className={classes.paper} id="emis-paper">
             <Grid container spacing={3}>
-              <Grid item  xs={12} sm={3}>
+              <Grid item xs={3}>
                 <img id="emis-logo" src={emis} alt="emis-logo"/>
               </Grid>
-              <Grid item xs={12} sm={9}>
+              <Grid item xs={9}>
                 <h5>Eastern Mediterranean International School</h5>
                 <p>
                 <i style={{fontSize:'14px'}}>Tel Aviv, Israel</i><br/>
@@ -72,12 +80,6 @@ export default function CustomizedTimeline() {
             </Grid>
           </Paper>
           <br/>
-        </TimelineOppositeContent>
-        <TimelineSeparator id="disappear">
-          <TimelineDot color="primary" id="disappear"/>
-        </TimelineSeparator>
-        <TimelineContent id="disappear">
-          2017 - 2019
         </TimelineContent>
       </TimelineItem>
     </Timeline>

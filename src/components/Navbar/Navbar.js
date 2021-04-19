@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { FiDownload, FiMenu } from 'react-icons/fi';
+import { FiDownload, FiMenu, FiX } from 'react-icons/fi';
 import { Button } from 'antd';
 import { Nav } from 'react-bootstrap';
 import Resume from '../../resume/ErlisaKullaCV.pdf';
@@ -62,7 +62,8 @@ function Navbar() {
       <div id="collapsed-navbar">
         <input type="checkbox" id="active"/>
         <label htmlFor="active" className="menu-btn">
-          <FiMenu style={{marginRight:'5px'}}/>
+          <FiMenu size={25} id="open-nav"/>
+          <FiX size={25} id="close-nav"/>
         </label>
 
         <div className="wrapper">
@@ -110,6 +111,7 @@ function Navbar() {
                 <Button 
                   type="secondary" 
                   shape="round" 
+                  id="resume-btn2"
                   icon={<FiDownload style={{marginRight:'5px'}}/>} 
                   size="default"
                 >
