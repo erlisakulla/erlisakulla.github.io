@@ -209,7 +209,6 @@ export const CanDoList = () => {
               <div className="just-icons" id="backend-icons">
                 <SiCplusplus size={25}/>
                 <DiMysql size={25}/>
-                <DiJava size={25}/>
                 <DiPython size={25}/>
                 <SiDjango size={25}/>
                 <DiJava size={25}/>
@@ -238,16 +237,6 @@ export const CanDoList = () => {
                     MySQL
                     <Tooltip title="7/10" placement="right" arrow>
                       <Progress percent={70} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
-                    </Tooltip>
-                  </Grid>
-
-                  <Grid item xs={2}>
-                    <DiJava size={25}/>
-                  </Grid>
-                  <Grid item xs={10}>
-                    Java
-                    <Tooltip title="6/10" placement="right" arrow>
-                      <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 

@@ -7,7 +7,6 @@
 ## TODO
 - [ ] Update CV
 - [ ] Fix responsive issues: projects and about padding
-- [ ] Add more colors from the color theme
 - [ ] Colorful navs on hover
 - [X] Make the website content responsive
 - [X] Make navbar responsive
@@ -25,20 +24,21 @@
 - [ ] Add sticky social media icons to the side
 - [ ] Add close icon to responsive navbar
 - [ ] Add dark mode option
+- [ ] Fix work and education images on responsive site
+- [ ] Add images to Projects - add icons of frameworks
 
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
 * Color theme: pink, blue, dark grey
-* Add minisection navigation in each page
-* Scroll to top option
 * Inspo from Bridge website https://bridgelanding.qodeinteractive.com
-* Sticky navbar on scroll
 * Using components from Material UI (Grid, Timeline, Paper, Ant Design (Card, Col, Row, Button) Design, React Bootstrap (Navbar), Feather Icons, react-icons
 
 ## Website Structure
 
 ### Navbar 
 - [X] Link to download resume
+- [X] Sticky
+- [X] Responsive
 
 ### Intro 
 * [X] Image
@@ -71,7 +71,7 @@
 - [X] Contact me form that sends emails using EmailJS
 
 ### Blog
-- [ ] Create blog page
+- [ ] Create blog page using markdown
 
 ### Footer
 - [X] Navigation links
