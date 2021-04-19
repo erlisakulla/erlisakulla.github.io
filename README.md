@@ -5,6 +5,9 @@
 ## Framework: React
 
 ## TODO
+- [ ] Fix issue with responsive navbar links active on phones
+- [ ] Fix responsive issue with screens under 360
+
 - [ ] Update CV
 - [ ] Colorful navs on hover
 - [X] Make the website content responsive
