@@ -42,7 +42,7 @@ export default function CustomizedTimeline() {
                 <img id="bmw-logo" src={bmw} alt="bmw-logo"/>
               </Grid>
               <Grid item xs={12} sm={9}>
-                <h5>Software Engineering Intern</h5>
+                <h5>Incoming Software Engineering Intern</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Munich, Germany</i><br/>
                   <a className="weblink" target="_blank" rel="noreferrer"  href="http://www.bmwgroup.de"><FiGlobe/></a> BMW Group 
