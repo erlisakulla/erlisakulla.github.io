@@ -9,17 +9,25 @@ class ContactMe extends React.Component {
     super(props);
 
     this.sendEmail = this.sendEmail.bind(this);
+    this.onChangeInput = this.onChangeInput.bind(this);
+
+    this.state = {
+      first_name: '',
+      last_name: '',
+      email: '',
+      subject: '',
+      message: '',
+    }
   };
 
   sendEmail(e) {
     e.preventDefault();
     emailjs.sendForm('gmail', process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
       .then((result) => {
-        console.log(result.text);
         notification.open({
           message: 'Your email was sent successfully!',
           description:
-            'Thank you for your email. I will get back to you as soon as possible :)'
+            'I will get back to you as soon as possible :)'
         });
       }, (error) => {
         notification.open({
@@ -28,13 +36,26 @@ class ContactMe extends React.Component {
         console.log(error.data);
       }
     );
-    e.target.reset();
+
+    this.setState({
+      first_name: '',
+      last_name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
+  }
+
+  onChangeInput(e) {
+    const cred = this.state;
+    cred[e.target.name] = e.target.value;
+    this.setState(cred);
   }
 
   render() {
     return (
       <div id="contact-form-cont">
-        <form name="complex-form" action="#" method="post" onSubmit={this.sendEmail}>
+        <form name="complex-form" method="post" onSubmit={this.sendEmail}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
               <Form.Item style={{ marginBottom: 0 }}>
@@ -48,6 +69,8 @@ class ContactMe extends React.Component {
                         name="first_name" 
                         id="fname" 
                         placeholder="First Name"
+                        value={this.state.first_name}
+                        onChange={this.onChangeInput}
                       />
                     </Form.Item>
                   </Grid>
@@ -61,6 +84,8 @@ class ContactMe extends React.Component {
                         name="last_name" 
                         id="lname" 
                         placeholder="Last Name"
+                        value={this.state.last_name}
+                        onChange={this.onChangeInput}
                       />
                     </Form.Item>
                   </Grid>
@@ -78,6 +103,8 @@ class ContactMe extends React.Component {
                     name="email" 
                     placeholder="Email" 
                     type="email"
+                    value={this.state.email}
+                    onChange={this.onChangeInput}
                   />
                 </Form.Item>
               </Form.Item>
@@ -91,6 +118,8 @@ class ContactMe extends React.Component {
                     id="subject" 
                     name="subject" 
                     placeholder="Subject" 
+                    value={this.state.subject}
+                    onChange={this.onChangeInput}
                   />
                 </Form.Item>
               </Form.Item>
@@ -102,11 +131,13 @@ class ContactMe extends React.Component {
                   noStyle
                   rules={[{ required: true }]}
                 >
-                  <Input.TextArea
+                  <textarea className="ant-input"
                     required
                     name="message" 
                     id="message" 
                     placeholder="If you simply want to say hi, you want to collaborate, or you want to ask me something, don't hesitate to message me..."
+                    value={this.state.message}
+                    onChange={this.onChangeInput}
                   />
                 </Form.Item>
               </Form.Item>

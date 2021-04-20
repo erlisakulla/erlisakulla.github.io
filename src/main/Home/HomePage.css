@@ -431,3 +431,7 @@ h3 {
   transform: translateY(15px);
   border-radius: 4px;
 }
+
+#bmw-paper {
+  cursor: pointer;
+}

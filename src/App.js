@@ -13,7 +13,6 @@ function App() {
       <Helmet>
         <title>Erlisa Kulla | Website</title>
         <meta name="description" content="Software Developer and Artist with a great passion for learning and creative exploration."/>
-        <base target="_blank" href="https://www.erlisakulla.com"/>
       </Helmet>
 
       <Navbar/>

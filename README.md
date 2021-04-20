@@ -4,6 +4,9 @@
 
 ## Framework: React
 
+## TODO
+- [ ] Add SSR using Next or Gatsby
+
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
 * Color theme: pink, blue, dark grey

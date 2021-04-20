@@ -245,8 +245,8 @@ export const CanDoList = () => {
                   </Grid>
                   <Grid item xs={10}>
                     Python
-                    <Tooltip title="6/10" placement="right" arrow>
-                      <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
+                    <Tooltip title="5/10" placement="right" arrow>
+                      <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 

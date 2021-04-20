@@ -31,5 +31,4 @@ build/
 
 .env
 
-notes.txt
-TODO.md
+ignore/
