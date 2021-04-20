@@ -4,36 +4,10 @@
 
 ## Framework: React
 
-## TODO
-- [ ] Fix issue with responsive navbar links active on phones
-- [ ] Fix responsive issue with screens under 360
-
-- [ ] Update CV
-- [ ] Colorful navs on hover
-- [X] Make the website content responsive
-- [X] Make navbar responsive
-- [ ] Illustrations for sections
-- [ ] Background designs
-- [ ] Activate navbar links when scrolled at them
-- [ ] Make skills and can do as slideshow cards
-- [ ] Make work and education cards collapsible to show more details
-- [ ] Add transition when content is loading
-- [ ] Add animations and transitions using react-scroll, GSAP or ScrollMagic
-- [X] Get domain and connect it
-- [ ] Add background hover animations
-- [ ] Illustration hover animations
-- [ ] Create logo animation when page is loaded 
-- [ ] Add sticky social media icons to the side
-- [X] Add close icon to responsive navbar
-- [ ] Add dark mode option
-- [ ] Fix work and education images on responsive site
-- [ ] Add images to Projects - add icons of frameworks
-
 ## Styles
 * Fonts: Poppins, IBM Plex Serif
 * Color theme: pink, blue, dark grey
-* Inspo from Bridge website https://bridgelanding.qodeinteractive.com
-* Using components from Material UI (Grid, Timeline, Paper, Ant Design (Card, Col, Row, Button) Design, React Bootstrap (Navbar), Feather Icons, react-icons
+* Using components from Material UI (Grid, Timeline, Paper), Ant Design (Card, Button, Form) Design, React Bootstrap (Navbar), Feather Icons, react-icons
 
 ## Website Structure
 
@@ -79,3 +53,28 @@
 - [X] Navigation links
 - [X] Social media links: facebook, instagram, artstaion, github, artstation, behance
 - [X] Made with React and Copyright
+
+## TODO
+- [ ] Fix issue with responsive navbar links active on phones
+- [ ] Fix responsive issue with screens under 360
+- [ ] Update CV
+- [ ] Colorful navs on hover
+- [X] Make the website content responsive
+- [X] Make navbar responsive
+- [ ] Illustrations for sections
+- [ ] Background designs
+- [ ] Activate navbar links when scrolled at them
+- [ ] Make skills and can do as slideshow cards
+- [ ] Make work and education cards collapsible to show more details
+- [ ] Add transition when content is loading
+- [ ] Add animations and transitions using react-scroll, GSAP or ScrollMagic
+- [X] Get domain and connect it
+- [ ] Add background hover animations
+- [ ] Illustration hover animations
+- [ ] Create logo animation when page is loaded 
+- [ ] Add sticky social media icons to the side
+- [X] Add close icon to responsive navbar
+- [ ] Add dark mode option
+- [ ] Fix work and education images on responsive site
+- [ ] Add images to Projects - add icons of frameworks
+- [ ] Add SSR using Gatsby or Next
