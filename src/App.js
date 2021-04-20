@@ -5,10 +5,17 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Erlisa Kulla | Website</title>
+        <meta name="description" content="Software Developer and Artist with a great passion for learning and creative exploration."/>
+        <base target="_blank" href="https://www.erlisakulla.com"/>
+      </Helmet>
+
       <Navbar/>
 
       <Router>
