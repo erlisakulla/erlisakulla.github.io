@@ -89,7 +89,7 @@ class Home extends React.Component {
             </p>
 
             <div id="experience">
-              <h3 style={{padding:30}}>Work Experience</h3>
+              <h3 style={{padding:30}}>Experience</h3>
               <Experience/>
             </div>
 

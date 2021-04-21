@@ -435,3 +435,11 @@ h3 {
 #bmw-paper {
   cursor: pointer;
 }
+
+#video-link {
+  transform: translateY(-1px);
+}
+
+#contact-form-cont {
+  z-index: 510;
+}

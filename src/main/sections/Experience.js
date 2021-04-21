@@ -12,7 +12,7 @@ import bmw from '../../img/bmw-logo.png';
 import jsc from '../../img/jsc-logo.jpg';
 import idmc from '../../img/idmc-logo.jpg';
 import { FiGlobe } from 'react-icons/fi';
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp, FiExternalLink } from 'react-icons/fi';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -156,7 +156,10 @@ export default function CustomizedTimeline() {
                   Created several videos for their project called “Communist Terminologue”
                 </li>
                 <li>
-                  Animated a 4-minute-long video titled “The Train of Dictatorship” and won 1st place at their national contest
+                  Animated a 4-minute-long video titled “The Train of Dictatorship” and won 1st place at their national contest 
+                  <a href={`https://www.youtube.com/watch?v=7gBE8CJcYOw&t=2s`} target="_blank" rel="noreferrer noopener" style={{paddingLeft:'5px'}}>
+                    <FiExternalLink id="video-link"/>
+                  </a>
                 </li>
               </ul>
             </Collapse>
