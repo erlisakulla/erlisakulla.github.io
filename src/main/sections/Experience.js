@@ -9,6 +9,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import { Paper, Grid, Collapse } from '@material-ui/core';
 import bmw from '../../img/bmw-logo.png';
+// import allianz from '../../img/allianz-logo.jpg';
 import jsc from '../../img/jsc-logo.jpg';
 import idmc from '../../img/idmc-logo.jpg';
 import { FiGlobe } from 'react-icons/fi';
@@ -44,6 +45,47 @@ export default function CustomizedTimeline() {
 
   return (
     <Timeline align="alternate">
+      {/* <div className="time">August 2020 - Present</div>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Paper elevation={3} className={classes.paper} id="bmw-paper" onClick={handleExpandClick2}>
+            <Grid container spacing={3}>
+              <Grid item xs={9}>
+                <h5>AI-driven User Interfaces Developer - Working Student</h5>
+                <p>
+                  <i style={{fontSize:'14px'}}>Munich, Germany</i><br/>
+                  <a className="weblink" target="_blank" rel="noreferrer" href="https://www.allianz.de"><FiGlobe/></a> Allianz 
+                </p>
+
+              </Grid>
+              <Grid item xs={3}>
+                <img id="jsc-logo" src={allianz} alt="allianz-logo"/>
+              </Grid>
+            </Grid> */}
+
+            {/* <Collapse in={expandJSC} timeout="auto" unmountOnExit id="ui-ux-skills">
+              
+            </Collapse> */}
+
+            {/* <div style={{textAlign:'center', color:'none'}}>
+              {
+                (expandJSC === false) ?
+                <FiChevronDown size={25} id="backend-expand-arrow"/> :
+                <FiChevronUp size={25} id="backend-expand-arrow"/>
+              }
+            </div> */}
+          {/* </Paper>
+          <br/>
+        </TimelineOppositeContent>
+        <TimelineSeparator id="disappear">
+          <TimelineDot color="primary" variant="outlined" id="disappear"/>
+          <TimelineConnector className={classes.secondaryTail}/>
+        </TimelineSeparator>
+        <TimelineContent id="disappear">
+        September 2020 - Present
+        </TimelineContent>
+      </TimelineItem> */}
+
       <div className="time">June - July 2021</div>
       <TimelineItem>
         <TimelineOppositeContent id="disappear">
@@ -60,10 +102,10 @@ export default function CustomizedTimeline() {
                 <img id="bmw-logo" src={bmw} alt="bmw-logo"/>
               </Grid>
               <Grid item xs={9}>
-                <h5>Incoming Software Engineering Intern</h5>
+                <h5>Software Developer - Intern</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Munich, Germany</i><br/>
-                  <a className="weblink" target="_blank" rel="noreferrer"  href="http://www.bmwgroup.de"><FiGlobe/></a> BMW Group 
+                  <a className="weblink" target="_blank" rel="noreferrer" href="http://www.bmwgroup.de"><FiGlobe/></a> BMW Group 
                 </p>
               </Grid>
             </Grid>
@@ -97,13 +139,13 @@ export default function CustomizedTimeline() {
             <Collapse in={expandJSC} timeout="auto" unmountOnExit id="ui-ux-skills">
               <ul style={{listStyle:'circle', fontSize:'13px', lineHeight:'1.5', paddingTop:'10px', paddingRight:'10px', paddingBottom:'15px'}}>
                 <li>
-                  Recruiting and leading the Marketing Team for JSC 2021
+                  Recruited and led the Marketing Team for JSC 2021
                 </li>
                 <li>
-                  Creating visual content: logo design, social media posts, brochures, posters, flyers, videos, recruitment material etc.
+                  Created visual content: logo design, social media posts, brochures, posters, flyers, videos, recruitment material etc.
                 </li>
                 <li>
-                  Designing and managing the JSC website
+                  Designed and managed the JSC website
                 </li>
               </ul>
             </Collapse>

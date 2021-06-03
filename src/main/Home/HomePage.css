@@ -251,6 +251,7 @@ h3 {
 
 .project-card {
   max-width: 100%;
+  text-align: center;
 }
 
 @media (max-width:600px) {
