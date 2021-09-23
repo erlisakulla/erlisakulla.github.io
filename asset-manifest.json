@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.da4e9e02.chunk.css",
-    "main.js": "/static/js/main.a3eb374f.chunk.js",
-    "main.js.map": "/static/js/main.a3eb374f.chunk.js.map",
+    "main.css": "/static/css/main.79b06d9c.chunk.css",
+    "main.js": "/static/js/main.dd8d195d.chunk.js",
+    "main.js.map": "/static/js/main.dd8d195d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.68b8eaed.js",
     "runtime-main.js.map": "/static/js/runtime-main.68b8eaed.js.map",
     "static/css/2.c0add0fe.chunk.css": "/static/css/2.c0add0fe.chunk.css",
-    "static/js/2.4d2ba3df.chunk.js": "/static/js/2.4d2ba3df.chunk.js",
-    "static/js/2.4d2ba3df.chunk.js.map": "/static/js/2.4d2ba3df.chunk.js.map",
+    "static/js/2.8cda0e0a.chunk.js": "/static/js/2.8cda0e0a.chunk.js",
+    "static/js/2.8cda0e0a.chunk.js.map": "/static/js/2.8cda0e0a.chunk.js.map",
     "static/js/3.9c681520.chunk.js": "/static/js/3.9c681520.chunk.js",
     "static/js/3.9c681520.chunk.js.map": "/static/js/3.9c681520.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c0add0fe.chunk.css.map": "/static/css/2.c0add0fe.chunk.css.map",
-    "static/css/main.da4e9e02.chunk.css.map": "/static/css/main.da4e9e02.chunk.css.map",
-    "static/js/2.4d2ba3df.chunk.js.LICENSE.txt": "/static/js/2.4d2ba3df.chunk.js.LICENSE.txt",
-    "static/media/ErlisaKullaCV.2acc37e0.pdf": "/static/media/ErlisaKullaCV.2acc37e0.pdf",
+    "static/css/main.79b06d9c.chunk.css.map": "/static/css/main.79b06d9c.chunk.css.map",
+    "static/js/2.8cda0e0a.chunk.js.LICENSE.txt": "/static/js/2.8cda0e0a.chunk.js.LICENSE.txt",
+    "static/media/ErlisaKullaCV-Sep2021.9b6661a6.pdf": "/static/media/ErlisaKullaCV-Sep2021.9b6661a6.pdf",
+    "static/media/allianz-logo.080800b8.jpg": "/static/media/allianz-logo.080800b8.jpg",
     "static/media/bmw-logo.0e7959ee.png": "/static/media/bmw-logo.0e7959ee.png",
     "static/media/emis-logo.dac5cee3.png": "/static/media/emis-logo.dac5cee3.png",
     "static/media/idmc-logo.2d3e5208.jpg": "/static/media/idmc-logo.2d3e5208.jpg",
@@ -26,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.68b8eaed.js",
     "static/css/2.c0add0fe.chunk.css",
-    "static/js/2.4d2ba3df.chunk.js",
-    "static/css/main.da4e9e02.chunk.css",
-    "static/js/main.a3eb374f.chunk.js"
+    "static/js/2.8cda0e0a.chunk.js",
+    "static/css/main.79b06d9c.chunk.css",
+    "static/js/main.dd8d195d.chunk.js"
   ]
 }
