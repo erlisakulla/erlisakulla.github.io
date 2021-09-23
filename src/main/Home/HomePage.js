@@ -66,7 +66,7 @@ class Home extends React.Component {
             </Grid>
           </div>
 
-          <div id="skills">
+          <section id="skills">
             <h1>Skills</h1>
 
             <div id="can-do">
@@ -78,9 +78,9 @@ class Home extends React.Component {
               <h3 style={{paddingBottom:30}}>What I am learning</h3>
               <LearningList/>
             </div>
-          </div>
+          </section>
 
-          <div id="about">
+          <section id="about">
             <h1>About Me</h1>
             <p style={{fontSize:'16px'}} id="about-text">
               I am from Albania, currently located in 📍 Bremen, Germany. 
@@ -97,9 +97,9 @@ class Home extends React.Component {
               <h3 style={{padding:30}}>Education</h3>
               <Education/>
             </div>
-          </div>
+          </section>
 
-          <div id="projects">
+          <section id="projects">
             <h1 style={{paddingBottom:30}}>Projects</h1>
             <Projects/>
             <a href="https://github.com/erlisakulla?tab=repositories" target="_blank" rel="noreferrer">
@@ -114,7 +114,7 @@ class Home extends React.Component {
                 More
               </Button>
             </a>
-          </div>
+          </section>
 
           <div id="contact">
             <h1 style={{fontWeight:700}}>Let's get in touch!</h1>

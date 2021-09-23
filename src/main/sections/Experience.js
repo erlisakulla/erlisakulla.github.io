@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import { Paper, Grid, Collapse } from '@material-ui/core';
 import bmw from '../../img/bmw-logo.png';
-// import allianz from '../../img/allianz-logo.jpg';
+import allianz from '../../img/allianz-logo.jpg';
 import jsc from '../../img/jsc-logo.jpg';
 import idmc from '../../img/idmc-logo.jpg';
 import { FiGlobe } from 'react-icons/fi';
@@ -27,9 +27,14 @@ const useStyles = makeStyles((theme) => ({
 export default function CustomizedTimeline() {
   const classes = useStyles();
 
+  const [expandAllianz, setAllianzExpand] = useState(false);
   const [expandBMW, setBMWExpand] = useState(false);
   const [expandJSC, setJSCExpand] = useState(false);
   const [expandIDMC, setIDMCxpand] = useState(false);
+
+  const handleExpandClick4 = () => {
+    setAllianzExpand(!expandAllianz);
+  };
 
   const handleExpandClick1 = () => {
     setBMWExpand(!expandBMW);
@@ -45,10 +50,10 @@ export default function CustomizedTimeline() {
 
   return (
     <Timeline align="alternate">
-      {/* <div className="time">August 2020 - Present</div>
+      <div className="time">August 2020 - Present</div>
       <TimelineItem>
         <TimelineOppositeContent>
-          <Paper elevation={3} className={classes.paper} id="bmw-paper" onClick={handleExpandClick2}>
+          <Paper elevation={3} className={classes.paper} id="bmw-paper" onClick={handleExpandClick4}>
             <Grid container spacing={3}>
               <Grid item xs={9}>
                 <h5>AI-driven User Interfaces Developer - Working Student</h5>
@@ -61,20 +66,20 @@ export default function CustomizedTimeline() {
               <Grid item xs={3}>
                 <img id="jsc-logo" src={allianz} alt="allianz-logo"/>
               </Grid>
-            </Grid> */}
+            </Grid>
 
-            {/* <Collapse in={expandJSC} timeout="auto" unmountOnExit id="ui-ux-skills">
+            {/* <Collapse in={expandAllianz} timeout="auto" unmountOnExit id="ui-ux-skills">
               
-            </Collapse> */}
+            </Collapse>
 
-            {/* <div style={{textAlign:'center', color:'none'}}>
+            <div style={{textAlign:'center', color:'none'}}>
               {
-                (expandJSC === false) ?
+                (expandAllianz === false) ?
                 <FiChevronDown size={25} id="backend-expand-arrow"/> :
                 <FiChevronUp size={25} id="backend-expand-arrow"/>
               }
             </div> */}
-          {/* </Paper>
+          </Paper>
           <br/>
         </TimelineOppositeContent>
         <TimelineSeparator id="disappear">
@@ -84,7 +89,7 @@ export default function CustomizedTimeline() {
         <TimelineContent id="disappear">
         September 2020 - Present
         </TimelineContent>
-      </TimelineItem> */}
+      </TimelineItem>
 
       <div className="time">June - July 2021</div>
       <TimelineItem>
@@ -102,7 +107,7 @@ export default function CustomizedTimeline() {
                 <img id="bmw-logo" src={bmw} alt="bmw-logo"/>
               </Grid>
               <Grid item xs={9}>
-                <h5>Software Developer - Intern</h5>
+                <h5>DevOps Engineer - Internship</h5>
                 <p>
                   <i style={{fontSize:'14px'}}>Munich, Germany</i><br/>
                   <a className="weblink" target="_blank" rel="noreferrer" href="http://www.bmwgroup.de"><FiGlobe/></a> BMW Group 
@@ -110,9 +115,27 @@ export default function CustomizedTimeline() {
               </Grid>
             </Grid>
 
-            {/* <Collapse in={expandBMW} timeout="auto" unmountOnExit  id="ui-ux-skills">
-              Hello
-            </Collapse> */}
+            <Collapse in={expandBMW} timeout="auto" unmountOnExit  id="ui-ux-skills">
+              <ul style={{listStyle:'circle', fontSize:'13px', lineHeight:'1.5', paddingTop:'10px', paddingRight:'10px', paddingBottom:'15px'}}>
+                <li>
+                  Worked in an agile environment as part of the Financial Services Team (Credit Risk Rating)
+                </li>
+                <li>
+                  Fixed issues of Test Automation tasks using SoapUI and Guardean 4
+                </li>
+                <li>
+                  Migrated several jobs from an old Jenkins platform to a new one using Jenkinsfiles
+                </li>
+              </ul>
+            </Collapse>
+
+            <div style={{textAlign:'center', color:'none'}}>
+              {
+                (expandBMW === false) ?
+                <FiChevronDown size={25} id="backend-expand-arrow"/> :
+                <FiChevronUp size={25} id="backend-expand-arrow"/>
+              }
+            </div>
           </Paper>
           <br/>
         </TimelineContent>

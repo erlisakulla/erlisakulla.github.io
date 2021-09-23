@@ -7,7 +7,7 @@
   font-weight: 300;
 }
 
-.nav-link:after {
+.nav-link:after, .nav-link.active:after {
   display:block;
   content: '';
   border-bottom: solid 3px rgb(38 38 38);  
@@ -15,11 +15,11 @@
   transition: transform 250ms ease-in-out;
 }
 
-.nav-link:not(#resume-btn, .wrapper .nav-link):hover:after { 
+.nav-link:not(#resume-btn, .wrapper .nav-link):hover:after, .nav-link.active:after { 
   transform: scaleX(1); 
 }
 
-.nav-link:hover { 
+.nav-link:hover, .nav-link.active { 
   color: rgb(38 38 38);  
 }
 
