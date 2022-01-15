@@ -66,7 +66,7 @@ class Home extends React.Component {
             </Grid>
           </div>
 
-          <section id="skills">
+          <section id="skills" name="skills">
             <h1>Skills</h1>
 
             <div id="can-do">
@@ -80,7 +80,7 @@ class Home extends React.Component {
             </div>
           </section>
 
-          <section id="about">
+          <section id="about" name="about">
             <h1>About Me</h1>
             <p style={{fontSize:'16px'}} id="about-text">
               I am from Albania, currently located in 📍 Bremen, Germany. 
@@ -99,7 +99,7 @@ class Home extends React.Component {
             </div>
           </section>
 
-          <section id="projects">
+          <section id="projects" name="projects">
             <h1 style={{paddingBottom:30}}>Projects</h1>
             <Projects/>
             <a href="https://github.com/erlisakulla?tab=repositories" target="_blank" rel="noreferrer">
@@ -116,7 +116,7 @@ class Home extends React.Component {
             </a>
           </section>
 
-          <div id="contact">
+          <div id="contact" name="contact">
             <h1 style={{fontWeight:700}}>Let's get in touch!</h1>
             <h5 style={{paddingBottom:30, opacity:0.8}}>#OpenToWork</h5>
             <ContactMe/>

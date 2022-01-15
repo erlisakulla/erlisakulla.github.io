@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 import { FiDownload, FiMenu, FiX } from 'react-icons/fi';
 import { Button } from 'antd';
@@ -15,27 +16,19 @@ function Navbar() {
       <div id="navbar">
         <Nav className="justify-content-center" fixed="top" id="nav">
           <Nav.Item>
-            <Nav.Link href="#skills" id="skills-link">
-              Skills
-            </Nav.Link>
-          </Nav.Item>
-
-          <Nav.Item id="about-link">
-            <Nav.Link href="#about" id="about-link">
-              About
-            </Nav.Link>
+            <Link activeClass="active" className="nav-link" to="skills" spy={true} smooth={true} duration={500} offset={-150}>Skills</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="#projects" id="projects-link">
-              Projects
-            </Nav.Link>
+            <Link activeClass="active" className="nav-link" to="about" spy={true} smooth={true} duration={500} offset={-150}>About</Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link href="#contact" id="contact-link">
-              Contact
-            </Nav.Link>
+            <Link activeClass="active" className="nav-link" to="projects" spy={true} smooth={true} duration={500} offset={-150}>Projects</Link>
+          </Nav.Item>
+
+          <Nav.Item>
+            <Link activeClass="active" className="nav-link" to="contact" spy={true} smooth={true} duration={500} offset={-150}>Contact</Link>
           </Nav.Item>
 
           <Nav.Item>

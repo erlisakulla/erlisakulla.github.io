@@ -48,9 +48,12 @@ export default function CustomizedTimeline() {
     setIDMCxpand(!expandIDMC);
   };
 
+  // add jacobshack experience
+  // make component reusable
+
   return (
     <Timeline align="alternate">
-      <div className="time">August 2020 - Present</div>
+      <div className="time">September 2021 - Present</div>
       <TimelineItem>
         <TimelineOppositeContent>
           <Paper elevation={3} className={classes.paper} id="bmw-paper" onClick={handleExpandClick4}>
@@ -68,8 +71,15 @@ export default function CustomizedTimeline() {
               </Grid>
             </Grid>
 
-            {/* <Collapse in={expandAllianz} timeout="auto" unmountOnExit id="ui-ux-skills">
-              
+            <Collapse in={expandAllianz} timeout="auto" unmountOnExit id="ui-ux-skills">
+              <ul style={{listStyle:'circle', fontSize:'13px', lineHeight:'1.5', paddingTop:'10px', paddingRight:'10px', paddingBottom:'15px'}}>
+                <li>
+                  Worked in an agile environment as part of the Group Data Analytics Team
+                </li>
+                <li>
+                  Developed the frontend interface for the Motor Claim Suite Demo platform using Angular and the Allianz Angular components library
+                </li>
+              </ul>
             </Collapse>
 
             <div style={{textAlign:'center', color:'none'}}>
@@ -78,7 +88,7 @@ export default function CustomizedTimeline() {
                 <FiChevronDown size={25} id="backend-expand-arrow"/> :
                 <FiChevronUp size={25} id="backend-expand-arrow"/>
               }
-            </div> */}
+            </div>
           </Paper>
           <br/>
         </TimelineOppositeContent>
@@ -87,7 +97,7 @@ export default function CustomizedTimeline() {
           <TimelineConnector className={classes.secondaryTail}/>
         </TimelineSeparator>
         <TimelineContent id="disappear">
-        September 2020 - Present
+        September 2021 - Present
         </TimelineContent>
       </TimelineItem>
 
