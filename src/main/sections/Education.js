@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
@@ -8,11 +8,10 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import { Paper, Grid } from '@material-ui/core';
-import jacobs from '../../img/jacobs-logo.png';
-import emis from '../../img/emis-logo.png';
-// import Collapse from "@material-ui/core/Collapse";
-
-// add collapsible courses and work experience as well
+import { FiGlobe } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import Collapse from "@material-ui/core/Collapse";
+import education from '../content/education.json'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -26,62 +25,140 @@ const useStyles = makeStyles((theme) => ({
 export default function CustomizedTimeline() {
   const classes = useStyles();
 
-  return (
-    <Timeline align="alternate" id="education-timeline">
-      <div className="time">2019 - 2022</div>
-      <TimelineItem>
-        <TimelineOppositeContent id="timeline-content">
-          <Paper elevation={3} className={classes.paper} id="jacobs-paper">
-            <Grid container spacing={3}>
-              <Grid item xs={9}>
-                <h5>Jacobs University Bremen</h5>
-                <p>
-                  <i style={{fontSize:'14px'}}>Bremen, Germany</i><br/>
-                  BSc. Computer Science
-                </p>
-              </Grid>
-              <Grid item xs={3}>
-                <img id="jacobs-logo" src={jacobs} alt="jacobs-logo"/>
-              </Grid>
-            </Grid>
-          </Paper>
-          <br/>
-        </TimelineOppositeContent>
-        <TimelineSeparator id="disappear">
-          <TimelineDot variant="outlined" id="disappear"/>
-          <TimelineConnector/>
-        </TimelineSeparator>
-        <TimelineContent id="disappear">
-          2019 - 2022
-        </TimelineContent>
-      </TimelineItem>
+	const [expanded, setExpanded] = useState([]); 
 
-      <div className="time">2017 - 2019</div>
-      <TimelineItem>
-        <TimelineOppositeContent id="disappear">
-        2017 - 2019
-        </TimelineOppositeContent>
-        <TimelineSeparator id="disappear">
-          <TimelineDot color="primary" id="disappear"/>
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper} id="emis-paper">
-            <Grid container spacing={3}>
-              <Grid item xs={3}>
-                <img id="emis-logo" src={emis} alt="emis-logo"/>
-              </Grid>
-              <Grid item xs={9}>
-                <h5>Eastern Mediterranean International School</h5>
-                <p>
-                <i style={{fontSize:'14px'}}>Tel Aviv, Israel</i><br/>
-                  International Baccalaureate Diploma
-                </p>
-              </Grid>
-            </Grid>
-          </Paper>
-          <br/>
-        </TimelineContent>
-      </TimelineItem>
+	const handleExpandClick = (edu) => {
+		if (!expanded.includes(edu)) {
+			setExpanded(current => [...current, edu]);
+		}
+		else if (expanded.includes(edu)) {
+			setExpanded(expanded.filter(j => j !== edu))
+		}
+		console.log(expanded);
+	};
+
+	const eduList = education.slice(0).reverse(); 
+
+  return (
+  	<Timeline align="alternate" id="education-timeline">
+			{
+				eduList.map(edu => (
+					(edu.id % 2 === 0) ? 
+					<>
+						{/* LEFT ITEMS */}
+						<div className="time">{edu.duration}</div>
+						<TimelineItem>
+							<TimelineOppositeContent id="disappear" className="timeline">
+								{edu.duration}
+							</TimelineOppositeContent>
+							{
+								(edu.id === 0) ? 
+								<TimelineSeparator id="disappear">
+									<TimelineDot color="primary" variant="outlined" id="disappear"/>
+								</TimelineSeparator>
+							 :
+								<TimelineSeparator id="disappear">
+									<TimelineDot color="primary" variant="outlined" id="disappear"/>
+									<TimelineConnector className={classes.secondaryTail}/>
+								</TimelineSeparator>
+							}
+							<TimelineContent>
+								<Paper elevation={3} className={classes.paper} id="edu-paper" onClick={() => handleExpandClick(`edu-${edu.id}`)}>
+									<Grid container spacing={3}>
+										<Grid item xs={3}>
+											<img id="jsc-logo" src={require(`../../img/${edu.code}-logo.png`).default} alt="allianz-logo"/>
+										</Grid>
+										<Grid item xs={9}>
+											<h5>{edu.institution}</h5>
+											<p>
+												<i style={{fontSize:'14px'}}>{edu.location}</i><br/>
+												<a className="weblink" target="_blank" rel="noreferrer" href={edu.website}><FiGlobe/></a> {edu.degree} 
+											</p>
+										</Grid>
+									</Grid>
+
+									<Collapse in={expanded.includes(`edu-${edu.id}`)} timeout="auto" unmountOnExit id="ui-ux-skills">
+										<ul style={{listStyle:'circle', fontSize:'13px', lineHeight:'1.5', paddingTop:'10px', paddingRight:'10px', paddingBottom:'15px'}}>
+											{
+												edu.courses.map(course => (
+													<li>{course}</li>
+												))
+											}
+										</ul>
+									</Collapse>
+
+									<div style={{textAlign:'center', color:'none'}}>
+										{
+											(expanded.includes(`edu-${edu.id}`) === false) ?
+											<FiChevronDown size={25} id="backend-expand-arrow"/> :
+											<FiChevronUp size={25} id="backend-expand-arrow"/>
+										}
+									</div>
+								</Paper>
+								<br/>
+							</TimelineContent>
+						</TimelineItem>
+					</>
+					: 
+					<>
+						{/* RIGHT ITEMS */}
+						<div className="time">{edu.duration}</div>
+						<TimelineItem>
+							<TimelineOppositeContent>
+								<Paper elevation={3} className={classes.paper} id="edu-paper" onClick={() => handleExpandClick(`edu-${edu.id}`)}>
+									<Grid container spacing={3}>
+										<Grid item xs={9}>
+											<h5>{edu.institution}</h5>
+											<p>
+												<i style={{fontSize:'14px'}}>{edu.location}</i><br/>
+												<a className="weblink" target="_blank" rel="noreferrer" href={edu.website}><FiGlobe/></a> {edu.degree} 
+											</p>
+										</Grid>
+										<Grid item xs={3}>
+											<img id="jsc-logo" src={require(`../../img/${edu.code}-logo.png`).default} alt="allianz-logo"/>
+										</Grid>
+									</Grid>
+
+									<Collapse in={expanded.includes(`edu-${edu.id}`)} timeout="auto" unmountOnExit id="ui-ux-skills">
+										<ul style={{listStyle:'circle', fontSize:'13px', lineHeight:'1.5', paddingTop:'10px', paddingRight:'10px', paddingBottom:'15px'}}>
+											{
+												edu.courses.map(course => (
+													<li>{course}</li>
+												))
+											}
+										</ul>
+									</Collapse>
+
+									<div style={{textAlign:'center', color:'none'}}>
+										{
+											(expanded.includes(`edu-${edu.id}`) === false) ?
+											<FiChevronDown size={25} id="backend-expand-arrow"/> :
+											<FiChevronUp size={25} id="backend-expand-arrow"/>
+										}
+									</div>
+								</Paper>
+								<br/>
+							</TimelineOppositeContent>
+							{
+								(edu.id === 0) ? 
+								<TimelineSeparator id="disappear">
+									<TimelineDot color="primary" variant="outlined" id="disappear"/>
+								</TimelineSeparator>
+							 :
+								<TimelineSeparator id="disappear">
+									<TimelineDot color="primary" variant="outlined" id="disappear"/>
+									<TimelineConnector className={classes.secondaryTail}/>
+								</TimelineSeparator>
+							}
+							<TimelineContent id="disappear" className="timeline">
+								{edu.duration}
+							</TimelineContent>
+						</TimelineItem></>
+					)
+				)
+			}
+      
+      
     </Timeline>
   );
 }

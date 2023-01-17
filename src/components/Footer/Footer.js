@@ -50,7 +50,7 @@ class Navbar extends React.Component {
 
           <div className="footer-text">
             Made with React and Github Pages <br/>
-            Copyright © Erlisa Kulla 2021
+            Copyright © Erlisa Kulla 2023
           </div>
         </div>
       </>

@@ -100,7 +100,7 @@
   margin-right: 5%;
 }
 
-#bmw-paper, #jsc-paper, #idmc-paper, #jacobs-paper, #emis-paper {
+#job-paper, #edu-paper {
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -433,7 +433,7 @@ h3 {
   border-radius: 4px;
 }
 
-#bmw-paper {
+#job-paper, #edu-paper {
   cursor: pointer;
 }
 

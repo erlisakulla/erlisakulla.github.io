@@ -83,7 +83,7 @@ class Home extends React.Component {
           <section id="about" name="about">
             <h1>About Me</h1>
             <p style={{fontSize:'16px'}} id="about-text">
-              I am from Albania, currently located in 📍 Bremen, Germany. 
+              I am from Albania, currently located in 📍 Greenville, SC, USA. 
               My biggest passions are programming and art and I am always looking for ways to combine the two.
               I love 🎨 painting, 🎶 listening to music, 🎸 playing bass, 🎥 watching animated movies and shows, and of course 💻 programming.
             </p>

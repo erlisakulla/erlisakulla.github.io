@@ -5,7 +5,7 @@ import { Card, Progress } from 'antd';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3, DiPython, DiJavascript, DiJava, DiReact, DiNodejsSmall, DiMysql } from 'react-icons/di';
 import { BsFillBootstrapFill } from 'react-icons/bs';
-import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremiere, SiAdobexd } from 'react-icons/si';
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremierepro, SiAdobexd, SiAngular } from 'react-icons/si';
 import { FiFigma, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { SiDjango, SiCplusplus } from 'react-icons/si';
 // import uiux from '../../img/ui-ux-icon.svg';
@@ -45,7 +45,7 @@ export const CanDoList = () => {
                 <FiFigma size={25}/>
                 <SiAdobephotoshop size={25}/>
                 <SiAdobeillustrator size={25}/>
-                <SiAdobepremiere size={25}/>
+                <SiAdobepremierepro size={25}/>
                 <SiAdobexd size={25}/>
               </div> :
               null
@@ -84,7 +84,7 @@ export const CanDoList = () => {
                   </Grid>
 
                   <Grid item xs={2}>
-                    <SiAdobepremiere size={25}/>
+                    <SiAdobepremierepro size={25}/>
                   </Grid>
                   <Grid item xs={10}>
                     Adobe Premiere Pro
@@ -130,6 +130,7 @@ export const CanDoList = () => {
                 <DiJavascript size={25}/>
                 <BsFillBootstrapFill size={20}/>
                 <DiReact size={25}/>
+                <SiAngular size={22}/>
               </div> :
               null
             }
@@ -167,7 +168,7 @@ export const CanDoList = () => {
                   </Grid>
 
                   <Grid item xs={2}>
-                    <BsFillBootstrapFill size={25}/>
+                    <BsFillBootstrapFill size={20}/>
                   </Grid>
                   <Grid item xs={10}>
                     Bootstrap
@@ -183,6 +184,16 @@ export const CanDoList = () => {
                     React.js
                     <Tooltip title="6/10" placement="right" arrow>
                       <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
+                    </Tooltip>
+                  </Grid>
+
+                  <Grid item xs={2}>
+                    <SiAngular size={22}/>
+                  </Grid>
+                  <Grid item xs={10}>
+                    Angular
+                    <Tooltip title="6/10" placement="right" arrow>
+                      <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
                 </Grid>

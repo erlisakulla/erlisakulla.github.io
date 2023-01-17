@@ -1,0 +1,103 @@
+[
+    {
+        "id": 0,
+        "code": "idmc",
+        "title": "Content Creator",
+        "company": "Institute for Democracy, Media and Culture",
+        "duration":"January 2017 - August 2017",
+        "website": "https://idmc.al/en/",
+        "location": "Tirana, Albania",
+        "tasks": [
+            "Created several videos for their project called \"Communist Terminologue\"",
+            "Animated a 4-minute-long video titled <a href=\"https://www.youtube.com/watch?v=7gBE8CJcYOw&t=2s\" target=\"_blank\" rel=\"noreferrer noopener\" style=\"padding-left:5px; color:blue\">\"The Train of Dictatorship\"</a> and won 1st place at their national contest "
+        ],
+        "expand": true
+    },
+    {
+        "id": 1,
+        "code": "jsc",
+        "title": "Head of Marketing and Design",
+        "company": "Jacobs Startup Competition",
+        "duration":"April 2020 - March 2021",
+        "website": "https://www.jacobs-startup.com",
+        "location": "Bremen, Germany",
+        "tasks": [
+            "Recruited and led the Marketing Team for JSC 2021",
+            "Created visual content: logo design, social media posts, brochures, posters, flyers, videos, recruitment material etc.",
+            "Designed and managed the JSC website"],
+        "expand": true
+    },
+    {
+        "id": 2,
+        "code": "bmw1",
+        "title": "DevOps Engineer - Intern",
+        "company": "BMW Group",
+        "duration":"June 2021 - July 2021",
+        "website": "http://www.bmwgroup.de",
+        "location": "Munich, Germany (Remote)",
+        "tasks": [
+            "Worked in an agile environment as part of the Financial Services Team (Credit Risk Rating)",
+            "Fixed issues of Test Automation tasks using SoapUI and Guardean 4",
+            "Migrated several jobs from an old Jenkins platform to a new one using Jenkinsfiles"
+        ],
+        "expand": true
+    },
+    {
+        "id": 3,
+        "code": "jh",
+        "title": "Head of IT",
+        "company": "jacobsHack!",
+        "duration":"July 2021 - November 2021",
+        "website": "https://jacobshack.com/",
+        "location": "Bremen, Germany",
+        "tasks": [
+            "Lead the IT Team for the jacobsHack! 2021 hackathon",
+            "Built the website: <a href=\"https://jacobshack.com\" style=\"color:blue\">https://jacobshack.com</a> (2021 version)",
+            "Built the frontend of the the participant registration page: <a href=\"https://jhack2021.herokuapp.com\" style=\"color:blue\">https://jhack2021.herokuapp.com</a>"
+        ],
+        "expand": true
+    },
+    {
+        "id": 4,
+        "code": "allianz",
+        "title": "AI-driven User Interfaces Developer - Working Student",
+        "company": "Allianz SE",
+        "duration":"September 2021 - February 2022",
+        "website": "https://www.allianz.de",
+        "location": "Munich, Germany (Remote)",
+        "tasks": [
+            "Worked in an agile environment as part of the Group Data Analytics Team",
+            "Developed the frontend interface for the Motor Claim Suite Demo platform using Angular and the Allianz Angular components library"
+        ],
+        "expand": true
+    },
+    {
+        "id": 5,
+        "code": "bmw2",
+        "title": "DevOps Engineer - Working Student",
+        "company": "BMW Group",
+        "duration":"March 2022 - August 2022",
+        "website": "http://www.bmwgroup.de",
+        "location": "Munich, Germany (Remote)",
+        "tasks": [
+            "Worked as part of the Financial Services – Group IT team",
+            "Tasks included: delivery assurance, testing (Jira Xray), CI/CD pipelines (Jenkins), error handling, database management (Oracle SQL Developer), software releases, and documentation (Confluence)"],
+        "expand": true
+    }
+    ,
+    {
+        "id": 6,
+        "code": "bmwmc",
+        "title": "Innovation and Research International Intern",
+        "company": "BMW Manufacturing Co. LLC",
+        "duration":"September 2022 - March 2023",
+        "website": "https://www.bmwgroup-werke.com/spartanburg/en.html",
+        "location": "Greenville, SC, USA",
+        "tasks": [
+            "Researching on the topic of Generative AI (Stable Diffusion, DALL-E, ChatGPT etc.",
+            "Developing BMW use cases using Python",
+            "Designing concepts for a Metaverse project using Photoshop and Unreal Engine 4"
+        ],
+        "expand": true
+    }
+]
