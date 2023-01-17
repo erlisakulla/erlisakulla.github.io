@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ac04db33.chunk.css",
-    "main.js": "/static/js/main.d81545a6.chunk.js",
-    "main.js.map": "/static/js/main.d81545a6.chunk.js.map",
+    "main.js": "/static/js/main.6f0ee3c9.chunk.js",
+    "main.js.map": "/static/js/main.6f0ee3c9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c93f3f59.js",
     "runtime-main.js.map": "/static/js/runtime-main.c93f3f59.js.map",
     "static/css/2.d086cdb3.chunk.css": "/static/css/2.d086cdb3.chunk.css",
@@ -19,7 +19,7 @@
     "static/media/3-logo.png": "/static/media/3-logo.7baabd03.png",
     "static/media/4-logo.png": "/static/media/4-logo.cf17867a.png",
     "static/media/5-logo.png": "/static/media/5-logo.0e7959ee.png",
-    "static/media/ErlisaKullaCV-Sep2021.9b6661a6.pdf": "/static/media/ErlisaKullaCV-Sep2021.9b6661a6.pdf",
+    "static/media/ErlisaKullaCV-Feb2023.39bb93a6.pdf": "/static/media/ErlisaKullaCV-Feb2023.39bb93a6.pdf",
     "static/media/emis-logo.png": "/static/media/emis-logo.dac5cee3.png",
     "static/media/jub-logo.png": "/static/media/jub-logo.d2a2a148.png",
     "static/media/logo-white.1525f315.png": "/static/media/logo-white.1525f315.png",
@@ -30,6 +30,6 @@
     "static/css/2.d086cdb3.chunk.css",
     "static/js/2.5bc399df.chunk.js",
     "static/css/main.ac04db33.chunk.css",
-    "static/js/main.d81545a6.chunk.js"
+    "static/js/main.6f0ee3c9.chunk.js"
   ]
 }
