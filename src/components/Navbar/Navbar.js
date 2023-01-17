@@ -4,7 +4,7 @@ import './Navbar.css';
 import { FiDownload, FiMenu, FiX } from 'react-icons/fi';
 import { Button } from 'antd';
 import { Nav } from 'react-bootstrap';
-import Resume from '../../resume/ErlisaKullaCV-Sep2021.pdf';
+import Resume from '../../resume/ErlisaKullaCV-Feb2023.pdf';
 
 function Navbar() {
   const closeNav = () => {
