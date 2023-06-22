@@ -1,6 +1,6 @@
 # Personal Website
 
-## [https://www.erlisakulla.com](https://www.erlisakulla.com)
+## [https://www.erlisakulla.me](https://www.erlisakulla.me)
 
 ## Framework: React
 
