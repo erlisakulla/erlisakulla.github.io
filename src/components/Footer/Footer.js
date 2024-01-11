@@ -6,6 +6,7 @@ import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
 
 class Navbar extends React.Component {
   render() {
+    const today = new Date();
     return (
       <>
         <div className="footer">
@@ -50,7 +51,7 @@ class Navbar extends React.Component {
 
           <div className="footer-text">
             Made with React and Github Pages <br/>
-            Copyright © Erlisa Kulla 2023
+            Copyright © Erlisa Kulla {today.getFullYear()}
           </div>
         </div>
       </>
