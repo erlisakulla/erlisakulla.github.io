@@ -4,7 +4,7 @@ import self from '../../img/self.png';
 import { Grid } from '@material-ui/core';
 import { BackTop, Button } from 'antd';
 import { CanDoList } from '../sections/CanDo';
-import { LearningList } from '../sections/Learning';
+// import { LearningList } from '../sections/Learning';
 import { Projects } from '../sections/Projects';
 import ContactMe from '../sections/ContactMe';
 import { FiChevronUp, FiChevronsRight } from 'react-icons/fi';
@@ -67,23 +67,23 @@ class Home extends React.Component {
           </div>
 
           <section id="skills" name="skills">
-            <h1>Skills</h1>
+            <h1 style={{paddingBottom:30}}>Skills</h1>
 
             <div id="can-do">
-              <h3 style={{paddingBottom:30}}>What I can do</h3>
+              {/* <h3 style={{paddingBottom:30}}>What I can do</h3> */}
               <CanDoList/>
             </div>
 
-            <div id="learning">
+            {/* <div id="learning">
               <h3 style={{paddingBottom:30}}>What I am learning</h3>
               <LearningList/>
-            </div>
+            </div> */}
           </section>
 
           <section id="about" name="about">
             <h1>About Me</h1>
             <p style={{fontSize:'16px'}} id="about-text">
-              I am from Albania, currently located in 📍 Greenville, SC, USA. 
+              I am from Albania, currently located in 📍 Munich, Germany. 
               My biggest passions are programming and art and I am always looking for ways to combine the two.
               I love 🎨 painting, 🎶 listening to music, 🎸 playing bass, 🎥 watching animated movies and shows, and of course 💻 programming.
             </p>

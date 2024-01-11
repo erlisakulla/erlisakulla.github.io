@@ -83,8 +83,7 @@
             "Worked as part of the Financial Services – Group IT team",
             "Tasks included: delivery assurance, testing (Jira Xray), CI/CD pipelines (Jenkins), error handling, database management (Oracle SQL Developer), software releases, and documentation (Confluence)"],
         "expand": true
-    }
-    ,
+    },
     {
         "id": 6,
         "code": "bmwmc",
@@ -94,9 +93,23 @@
         "website": "https://www.bmwgroup-werke.com/spartanburg/en.html",
         "location": "Greenville, SC, USA",
         "tasks": [
-            "Researching on the topic of Generative AI (Stable Diffusion, DALL-E, ChatGPT etc.",
-            "Developing BMW use cases using Python",
-            "Designing concepts for a Metaverse project using Photoshop and Unreal Engine 4"
+            "Researched on the topic of Generative AI (Stable Diffusion, DALL-E, ChatGPT etc.",
+            "Worked on developing an internal BMW chat assistant (LLM) using React and Python",
+            "Gave presentations on usages and implementations of Stable Diffusion"
+        ],
+        "expand": true
+    },
+    {
+        "id": 7,
+        "code": "bmw3",
+        "title": "Software Engineer",
+        "company": "BMW Group",
+        "duration":"July 2023 - Present",
+        "website": "http://www.bmwgroup.de",
+        "location": "Munich, Germany",
+        "tasks": [
+            "Researched on the topic of Generative AI and applications of Large Language Models",
+            "Worked in the Innovation and Emerging Technologies team on building an AI assistant for the Cloud Data Hub (a database management platform) which assists users with documentation questions as well as querying, analyzing and visualizing data (Text2SQL)"
         ],
         "expand": true
     }

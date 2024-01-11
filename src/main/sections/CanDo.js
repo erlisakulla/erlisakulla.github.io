@@ -3,12 +3,10 @@ import '../Home/HomePage.css';
 import { Grid, Collapse, Tooltip } from '@material-ui/core';
 import { Card, Progress } from 'antd';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { DiCss3, DiPython, DiJavascript, DiJava, DiReact, DiNodejsSmall, DiMysql } from 'react-icons/di';
-import { BsFillBootstrapFill } from 'react-icons/bs';
-import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremierepro, SiAdobexd, SiAngular } from 'react-icons/si';
+import { DiCss3, DiPython, DiJavascript, DiReact, DiNodejsSmall } from 'react-icons/di';
+import { BsFiletypeSql } from "react-icons/bs";
+import { SiAdobephotoshop, SiAdobeillustrator, SiAdobepremierepro, SiTypescript, SiAngular, SiAmazonaws, SiCplusplus, SiMicrosoftazure } from 'react-icons/si';
 import { FiFigma, FiChevronDown, FiChevronUp } from 'react-icons/fi';
-import { SiDjango, SiCplusplus } from 'react-icons/si';
-// import uiux from '../../img/ui-ux-icon.svg';
 
 export const CanDoList = () => {
   const [uiUxExpand, setUiUxExpand] = useState(false);
@@ -35,8 +33,7 @@ export const CanDoList = () => {
 
           <h5>UI/UX Design</h5>
           <hr/>
-          Design and prototype websites and apps using tools like <b>Figma</b> and <b>Adobe XD</b>. 
-          Expertise in design tools like <b>Adobe Photoshop</b> and <b>Illustrator</b>.
+          Design and prototype websites and apps using tools like <b>Figma</b>, <b>Adobe Photoshop</b> and <b>Adobe Illustrator</b>.
 
           <div style={{paddingTop:'20px'}} className="icons" onClick={handleExpandClick1}>
             {
@@ -46,7 +43,6 @@ export const CanDoList = () => {
                 <SiAdobephotoshop size={25}/>
                 <SiAdobeillustrator size={25}/>
                 <SiAdobepremierepro size={25}/>
-                <SiAdobexd size={25}/>
               </div> :
               null
             }
@@ -92,16 +88,6 @@ export const CanDoList = () => {
                       <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
-
-                  <Grid item xs={2}>
-                    <SiAdobexd size={25}/>
-                  </Grid>
-                  <Grid item xs={10}>
-                    Adobe XD
-                    <Tooltip title="5/10" placement="right" arrow>
-                      <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/> 
-                    </Tooltip>
-                  </Grid>
                 </Grid>
               </Collapse>
             </div>
@@ -119,7 +105,7 @@ export const CanDoList = () => {
         <Card elevation={3} className="cando-card">
           <h5>Frontend Development</h5>
           <hr/>
-          Design and build static and responsive websites using <b>HTML</b>, pure <b>CSS</b>, <b>Javascript</b>, <b>jQuery</b> as well as <b>React.js</b> and <b>Bootstrap</b>. Build frontend frameworks to handle interactions with backend.
+          Building static or dynamic web apps using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>TypeScript</b>, <b>Angular</b> or <b>React</b>.
           
           <div style={{paddingTop:'20px'}} className="icons"  onClick={handleExpandClick2}>
             {
@@ -128,7 +114,7 @@ export const CanDoList = () => {
                 <AiFillHtml5 size={25}/>
                 <DiCss3 size={25}/>
                 <DiJavascript size={25}/>
-                <BsFillBootstrapFill size={20}/>
+                <SiTypescript size={25}/>
                 <DiReact size={25}/>
                 <SiAngular size={22}/>
               </div> :
@@ -161,19 +147,19 @@ export const CanDoList = () => {
                     <DiJavascript size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    Javascript
+                    JavaScript
                     <Tooltip title="8/10" placement="right" arrow>
                       <Progress percent={80} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 
                   <Grid item xs={2}>
-                    <BsFillBootstrapFill size={20}/>
+                    <SiTypescript size={20}/>
                   </Grid>
                   <Grid item xs={10}>
-                    Bootstrap
+                  TypeScript
                     <Tooltip title="8/10" placement="right" arrow>
-                      <Progress percent={80} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
+                      <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 
@@ -181,7 +167,7 @@ export const CanDoList = () => {
                     <DiReact size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    React.js
+                    React
                     <Tooltip title="6/10" placement="right" arrow>
                       <Progress percent={60} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
@@ -212,17 +198,17 @@ export const CanDoList = () => {
         <Card elevation={3} className="cando-card">
           <h5>Backend Development</h5>
           <hr/>
-          Build dynamic services that require database or API management using <b>Django</b>, <b>Django REST Framework</b> and <b>Node.js</b>. Experience in general use of <b>Java</b>, <b>C/C++</b> and <b>Python</b>.
+          Build dynamic services that require database or API management using <b>Python</b>, <b>Node</b>, <b>SQL</b>, <b>AWS</b> or <b>Azure</b>.
 
           <div style={{paddingTop:'20px'}} className="icons" onClick={handleExpandClick3}>
             {
               (backendExpand === false) ?
               <div className="just-icons" id="backend-icons">
                 <SiCplusplus size={25}/>
-                <DiMysql size={25}/>
+                <BsFiletypeSql size={25}/>
                 <DiPython size={25}/>
-                <SiDjango size={25}/>
-                <DiJava size={25}/>
+                <SiAmazonaws size={25}/>
+                <SiMicrosoftazure size={25}/>
                 <DiNodejsSmall size={25}/>
               </div> :
               null
@@ -242,10 +228,10 @@ export const CanDoList = () => {
                   </Grid>
 
                   <Grid item xs={2}>
-                    <DiMysql size={25}/>
+                    <BsFiletypeSql size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    MySQL
+                    SQL
                     <Tooltip title="7/10" placement="right" arrow>
                       <Progress percent={70} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
@@ -262,22 +248,22 @@ export const CanDoList = () => {
                   </Grid>
 
                   <Grid item xs={2}>
-                    <SiDjango size={25}/>
+                    <SiAmazonaws size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    Django
-                    <Tooltip title="5/10" placement="right" arrow>
+                    AWS
+                    <Tooltip title="4/10" placement="right" arrow>
                       <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 
                   <Grid item xs={2}>
-                    <DiJava size={25}/>
+                    <SiMicrosoftazure size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    Java
-                    <Tooltip title="5/10" placement="right" arrow>
-                      <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
+                    Azure
+                    <Tooltip title="4/10" placement="right" arrow>
+                      <Progress percent={40} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 
@@ -285,11 +271,10 @@ export const CanDoList = () => {
                     <DiNodejsSmall size={25}/>
                   </Grid>
                   <Grid item xs={10}>
-                    Node.js
+                    Node
                     <Tooltip title="4/10" placement="right" arrow>
                       <Progress percent={40} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
-                    
                   </Grid>
                 </Grid>
               </Collapse>
