@@ -204,9 +204,9 @@ export const CanDoList = () => {
             {
               (backendExpand === false) ?
               <div className="just-icons" id="backend-icons">
+                <DiPython size={25}/>
                 <SiCplusplus size={25}/>
                 <BsFiletypeSql size={25}/>
-                <DiPython size={25}/>
                 <SiAmazonaws size={25}/>
                 <SiMicrosoftazure size={25}/>
                 <DiNodejsSmall size={25}/>
