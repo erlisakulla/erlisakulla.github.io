@@ -217,6 +217,16 @@ export const CanDoList = () => {
               <Collapse in={backendExpand} timeout="auto" unmountOnExit id="backend-skills">
                 <Grid container spacing={5}>
                   <Grid item xs={2}>
+                    <DiPython size={25}/>
+                  </Grid>
+                  <Grid item xs={10}>
+                    Python
+                    <Tooltip title="5/10" placement="right" arrow>
+                      <Progress percent={70} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
+                    </Tooltip>
+                  </Grid>
+
+                  <Grid item xs={2}>
                     <SiCplusplus size={25}/>
                   </Grid>
                   <Grid item xs={10}>
@@ -224,7 +234,6 @@ export const CanDoList = () => {
                     <Tooltip title="7/10" placement="right" arrow>
                       <Progress percent={70} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
-                    
                   </Grid>
 
                   <Grid item xs={2}>
@@ -234,16 +243,6 @@ export const CanDoList = () => {
                     SQL
                     <Tooltip title="7/10" placement="right" arrow>
                       <Progress percent={70} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
-                    </Tooltip>
-                  </Grid>
-
-                  <Grid item xs={2}>
-                    <DiPython size={25}/>
-                  </Grid>
-                  <Grid item xs={10}>
-                    Python
-                    <Tooltip title="5/10" placement="right" arrow>
-                      <Progress percent={50} showInfo={false} strokeColor="grey" trailColor="#dbdbdb"/>
                     </Tooltip>
                   </Grid>
 
