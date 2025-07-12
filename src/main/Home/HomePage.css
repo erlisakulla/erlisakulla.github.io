@@ -1,215 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;700&family=Orelega+One&display=swap');
 
+#intro {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100vh;
+  text-align: left;
+}
+
+.intro-section {
+  height: 100%;
+  float: left;
+  padding-top: 15%;
+  padding-left: 100px;
+}
+
 #home-img {  
   padding-top: 50px;
   width: 120%;
 }
 
-#section-1, #skills, #about, #projects, #contact {
-  width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  text-align: center;
-}
-
-#section-1 {
-  height: 100vh;
-  text-align: left;
-}
-
-#skills, #about, #projects, #contact, #learning {
-  padding-top: 70px !important;
-}
-
-.intro-text {
-  height: 100%;
-  float: left;
-  padding-top: 30%;
-  padding-left: 100px;
-}
-
 #name {
-  font-size: 70px;
+  font-size: 80px;
   font-weight: 700;
 }
 
-#text {
-  font-size: 30px;
-}
-
-#skills {
-  padding-bottom: 70px;
-  text-align: center;
-}
-
-.card-skills, .card-tools {
-  width: 50%;
-} 
-
-.ant-card-head-title {
-  font-size: 30px;
-}
-
-.skill-icons, .tool-icons {
-  justify-content: center;
-  text-align: center;
-}
-
-.adobe-icon {
-  margin-right: 15px;
-}
-
-.cando-card {
-  text-align: center;
-  justify-content: center;
-  min-height: 200px;   
-}
-
-#back-top-btn {
-  color: rgb(100, 100, 100);
-  background-color: rgb(184, 184, 184);
-  border-radius: 50px;
-  padding: 7px;
-  opacity: 0.7;
-  transition: linear 0.1s;
-}
-
-#back-top-btn:hover {
-  opacity: 1;
-  transition: linear 0.1s;
-  transform: translateY(-5px);
-  -webkit-box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.05); 
-  box-shadow: 3px 3px 15px 3px rgba(0,0,0,0.05);
-}
-
-#know-me-btn {
-  margin-right: 20px;
-}
-
-#icon-arrow {
-  transition: linear 0.2s;
-}
-
-.link-btn:hover [id="icon-arrow"] {
-  transform: rotate(90deg);
-  transition: linear 0.2s;
-}
-
-#experience, #education {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#job-paper, #edu-paper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  line-height: 1.5;
-}
-
-#jacobs-logo, #emis-logo, #bmw-logo, #idmc-logo, #jsc-logo {
-  width: 100%;
-  padding: 5px;
-}
-
-.weblink svg {
-  transform: translateY(-1.5px);
-}
-
-.weblink {
-  color: rgb(68, 68, 68);
-}
-
-/* #projects {
-  padding-left: 10%;
-  padding-right: 20%;
-  padding-top: 0px;
-} */
-
-.project-card, .cando-card {
-  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
-}
-
-#about-text {
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-top: 20px;
-}
-
-h1, #skills h1, #about h1, #projects h1, h2 {
+h2 {
   font-family: 'IBM Plex Serif', serif;
   font-weight: 700;
 }
 
-h3 {
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 500;
+#intro-text {
+  font-size: 30px;
+  margin-bottom: 16px;
 }
 
-#software:hover, #artist:hover {
-  text-decoration: underline;
+#location {
+  margin-bottom: 16px;
 }
 
-.icons svg, .icons2 svg {
-  margin: 10px;
-}
-
-.icons:hover {
-  cursor: pointer;
-}
-
-.just-icons {
-  animation: cssAnimation 0s 0.5s forwards, fadeIn 1.5s;
-  visibility: hidden;
-}
-
-@keyframes cssAnimation {
-  to { visibility: visible; }
-}
-
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-.ant-progress-bg {
-  animation: expand 1.5s;;
-}
-
-.ant-progress-bg, .ant-progress-inner {
-  transform: scaleY(0.8);
-}
-
-@keyframes expand {
-  0% {width:0;}
-  100% {width:1;}
-}
-
-.skills-progress {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.MuiGrid-spacing-xs-5 > .MuiGrid-item {
-  text-align: left;
-  font-size: 13px;
-}
-
-@media (max-width:900px) {
-  #disappear {
-    display: none;
-  }
-
-  #about-text {
-    padding: 0px;
-    font-size: 14px;
-  }
-
-  .time {
-    display: block !important;
-  }
+#coming-soon {
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 60%;
 }
 
 @media (max-width:960px) {
+  #intro {
+    height: 100vh;
+    height: 100% !important;
+  }
+
   #home-img {
     padding: 0px;
     padding-left: 10%;
@@ -217,230 +61,31 @@ h3 {
     width: 100%;
   }
 
+  .intro-section {
+    padding: 0px;
+  }
+
   #name {
     font-size: 54px;
   }
 
-  #text {
+  #intro-text {
     font-size: 18px;
   }
 
-  .intro-text {
+  #location {
     padding: 0px;
-  }
-
-  #section-1 {
-    height: 100vh;
-  }
-
-  #skills, #about, #projects, #contact {
-    padding-left: 10;
-    padding-right: 10;
-  }
-  
-  #section-1 {
-    height: 100% !important;
-  }
-}
-
-.project-card:hover {
-  z-index: 80;
-  transform: translateY(-5px);
-  transition: transform linear 0.2s;
-}
-
-.project-card {
-  max-width: 100%;
-  text-align: center;
-}
-
-@media (max-width:600px) {
-  p:not(#text) {
     font-size: 14px !important;
   }
 
-  h5 {
-    font-size: 18px !important;
+  #coming-soon {
+    font-size: 20px;
+    margin-top: 16px;
   }
+}
 
-  .MuiTimeline-root {
-    padding: 0 !important;
-  }
-
-  #projects {
-    padding:10% !important;
-  }
-
+@media (max-width:600px) {
   #home-img {
     padding-top: 20px;
   }
-
-  #skills {
-    padding-top: 150px !important;
-  }
-}
-
-@media (max-width:361px) {
-  .skills-progress {
-    padding: 0 35px !important;
-  }
-
-  #about, #projects, #contact  {
-    padding: 0;
-  }
-
-  #about-text {
-    padding: 20px !important;
-    font-size: 14px !important;
-  } 
-
-  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
-    padding: 0 !important;
-  }
-
-  #projects {
-    padding: 20px !important;
-    padding-bottom: 50px !important;
-  }
-}
-
-@media (max-width:390px) {
-  .skills-progress {
-    padding: 0 20px !important;
-  }
-}
-
-#ui-ux-expand-arrow:hover, #frontend-expand-arrow:hover, #backend-expand-arrow:hover {
-  opacity: 1;
-  animation: expandArrow 1s infinite;
-}
-
-@keyframes expandArrow {
-  0% {transform: translateY(0px);}
-  50% {transform: translateY(5px);}
-  100% {transform: translateY(0px);}
-}
-
-#ui-ux-expand-arrow {
-  opacity: 0.8;
-  color: #3f51b5;
-  transition: linear 0.5s;
-}
-
-#frontend-expand-arrow {
-  opacity: 0.8;
-  color: #f50057;
-  transition: linear 0.5s;
-}
-
-#backend-expand-arrow {
-  opacity: 0.8;
-  transition: linear 0.5s;
-}
-
-.cando-card:hover [id="ui-ux-icons"] {
-  color: #3f51b5;
-  transition: linear 0.5s;
-}
-
-#ui-ux-icons {
-  transition: linear 0.3s;
-}
-
-.cando-card:hover [id="frontend-icons"] {
-  color: #f50057;
-  transition: linear 0.5s;
-}
-
-#frontend-icons {
-  transition: linear 0.3s;
-}
-
-#ui-ux-skills svg {
-  color: #3f51b5;
-  /* transform: scale(0.8); */
-}
-
-#frontend-skills svg {
-  color: #f50057;
-}
-
-#fname, #lname, #subject, #email, #message {
-  border-color: #f50057;
-}
-
-/* #fname::placeholder, #lname::placeholder, #subject::placeholder, #email::placeholder, #message::placeholder {
-  color: #f50057;
-  opacity: 0.7;
-  font-weight: 400;
-} */
-
-#contact-form-cont {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 70px;
-}
-
-#message {
-  height: 144px;
-}
-
-#submit-btn {
-  border-color: #3f51b5;
-  color: #3f51b5;
-}
-
-#submit-btn:hover {
-  color: white;
-  background-color: #3f51b5;
-}
-
-@media (max-width:600px) {
-  #contact-form-cont {
-    padding: 0 !important;
-  }
-
-  #timeline-content {
-    width: 100% !important;
-    margin: 0;
-  }
-
-  #about {
-    margin: 0;
-    padding: 1%;
-  }
-
-  #about-text {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
-.time {
-  text-align: center;
-  font-size: 13px;
-  display: none;
-  background-color: #3f51b5;
-  opacity: 0.7;
-  color: white;
-  width: fit-content;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 0 10px;
-  padding-bottom: 10px;
-  transform: translateY(15px);
-  border-radius: 4px;
-}
-
-#job-paper, #edu-paper {
-  cursor: pointer;
-}
-
-#video-link {
-  transform: translateY(-1px);
-}
-
-#contact-form-cont {
-  z-index: 510;
 }
